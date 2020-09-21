@@ -1,0 +1,23 @@
+site_name: TOTVS INTERFACE ROBOT
+theme:
+  name: material
+  language: pt
+  palette:
+    primary: light blue
+    accent: light blue
+  logo: images/RoboCor.png
+  favicon: images/icon-128.png
+
+nav:
+    - Introdução a testes: index.md
+    - TIR: TIR.md
+    - TIR - Record: TIR-Record.md
+    - DashBoard: DashBoard.md
+    - FAQ: faq.md
+
+markdown_extensions:
+  - pymdownx.details
+  - pymdownx.superfences
+
+plugins:
+  - search
