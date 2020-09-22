@@ -11,8 +11,6 @@ theme:
 nav:
     - Introdução a testes: index.md
     - TIR: TIR.md
-    #TIR - Record: TIR-Record.md
-    #DashBoard: DashBoard.md
     - FAQ: faq.md
 
 markdown_extensions:

@@ -12,5 +12,4 @@ mkdocs serve
 ```
 
 [Documentação do Mkdocs](https://www.mkdocs.org/#mkdocs)
-
 [Documentação do tema mateial para mkdocs](https://squidfunk.github.io/mkdocs-material/)
