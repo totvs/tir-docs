@@ -9,9 +9,22 @@ theme:
   favicon: images/icon-128.png
 
 nav:
-    - Introdução a testes: index.md
+    - INTRODUÇÃO A TESTES: 'index.md'
+    - 'TESTES':
+      - 'Processo de Testes': './testes/ProcessodeTeste.md'
+      - 'Automação': './testes/Automação.md'
+      - 'Base de Dados': './testes/BasedeDados.md'
     - TIR: TIR.md
-    - FAQ: faq.md
+    - 'TIR RECORD':
+      - 'Introdução': './tir-record/introducaoTirRecord.md'
+      - 'Guia do usuário': './tir-record/ComoUsar.md'
+      - 'FAQ': './tir-record/faq.md'
+    - 'Dashboard':
+      - 'Introdução': './dashboard/index.md'
+      - 'Instalação do Serviço': './dashboard/BackEnd.md'
+      - 'Instalação do Portal': './dashboard/FrontEnd.md'
+      - 'Guia do usuário': './dashboard/ComoUsar.md'
+    - FAQ: faqGeral.md
 
 markdown_extensions:
   - pymdownx.details
