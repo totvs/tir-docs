@@ -9,21 +9,22 @@ theme:
   favicon: images/icon-128.png
 
 nav:
-    - INTRODUÇÃO A TESTES: 'index.md'
-    - 'TESTES':
-      - 'Processo de Testes': './testes/ProcessodeTeste.md'
-      - 'Automação': './testes/Automação.md'
-      - 'Base de Dados': './testes/BasedeDados.md'
+    - Bem-vindo ao TOTVS Interface Robot : 'index.md'
+    - 'Processo de Teste':
+      - 'Introdução a Testes': './testes/EmConstrucao.md'
+      # - 'Introdução a Testes de Software': './testes/ProcessodeTeste.md'
+      # - 'Automação': './testes/Automação.md'
     - TIR: TIR.md
-    - 'TIR RECORD':
+    - 'TIR Record':
       - 'Introdução': './tir-record/introducaoTirRecord.md'
       - 'Guia do usuário': './tir-record/ComoUsar.md'
       - 'FAQ': './tir-record/faq.md'
-    - 'Dashboard':
-      - 'Introdução': './dashboard/index.md'
-      - 'Instalação do Serviço': './dashboard/BackEnd.md'
-      - 'Instalação do Portal': './dashboard/FrontEnd.md'
-      - 'Guia do usuário': './dashboard/ComoUsar.md'
+    - 'Dashboard de Testes':
+      - 'Introdução': './dashboard/dashboard.md'
+      # - 'Introdução': './dashboard/index.md'
+      # - 'Instalação do Serviço': './dashboard/BackEnd.md'
+      # - 'Instalação do Portal': './dashboard/FrontEnd.md'
+      # - 'Guia do usuário': './dashboard/ComoUsar.md'
     - FAQ: faqGeral.md
 
 markdown_extensions:

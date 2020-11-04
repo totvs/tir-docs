@@ -26,7 +26,7 @@ Na versão atual, a extensão será distribuida através da [loja do Firefox](ht
 ???+ warning "Aviso"
     Lembre-se que o TIR realiza grande parte das ações iniciais para entrar no ambiente então considere os métodos "Setup" e "Program" para o ponto de partida na hora da gravação.
  
- - Clique no icone do TIR RECORD.
+ - Clique no icone do TIR Record.
  - Clique em criar.
  - Informe o nome dos script de teste.
  - Informe o nome do primeiro caso de teste.
@@ -41,7 +41,7 @@ O botão "Parar" evita que ações realizadas no Protheus WebApp sejam gravadas 
 
 ## Executar ação de clique em um botão
 ### Como executar as ações de clique em botões (SetButton):
-As ações de clique em botões no TIR são realizadas utilizando o método SetButton, este método é capaz de realizar um clique em um botão normal ou em um botão com subníveis.O TIR RECORD já é capaz de reconhecer quando um botão possui subníveis (".tmenupopup") após o clique.
+As ações de clique em botões no TIR são realizadas utilizando o método SetButton, este método é capaz de realizar um clique em um botão normal ou em um botão com subníveis.O TIR Record já é capaz de reconhecer quando um botão possui subníveis (".tmenupopup") após o clique.
 
 ???+ todo "SetButton"
     SetButton é um método responsável por realizar as ações de clique em botões. [Mais informações...](https://totvs.github.io/tir/webapp.html?highlight=setbutton#tir.main.Webapp.SetButton).
@@ -75,7 +75,7 @@ Algumas situações que devem ser consideradas:
 ![](./gifs/SetValueEnchoice.gif)
 
 ## Cliques em labels ou em folders:
-Ao realizar o click em textos (elementos "label/span ...") ou em pastas (elementos ".tfolder") o TIR RECORD reconhece o clique e grava a ação veja o exemplo a seguir:
+Ao realizar o click em textos (elementos "label/span ...") ou em pastas (elementos ".tfolder") o TIR Record reconhece o clique e grava a ação veja o exemplo a seguir:
 ![](./gifs/label_folder.gif)
 
 
@@ -108,13 +108,13 @@ Para que o SetValue seja gravado de forma correta antes de começar a preencher 
     utilize o comando LoadGrid para isso. [Clique aqui para mais informações](https://totvs.github.io/tir/webapp.html?highlight=loadgrid)
 	
 - Método CheckResult ( modo de validação ):
-    Quando a caixa do CheckResult estiver marcada o modo de validação do TIR RECORD PROTHEUS é ativado, este modo de validação muda a funcionalidade da extensão as gravações de comandos SetValue não serão mais efetivadas e agora com o clique do botão esquerdo do mouse é possível gravar o comando CheckResult do TIR ( **Atenção válido para Enchoice/Grid**)
+    Quando a caixa do CheckResult estiver marcada o modo de validação do TIR Record PROTHEUS é ativado, este modo de validação muda a funcionalidade da extensão as gravações de comandos SetValue não serão mais efetivadas e agora com o clique do botão esquerdo do mouse é possível gravar o comando CheckResult do TIR ( **Atenção válido para Enchoice/Grid**)
 
 ### Exemplo de utilização:
 ![](./gifs/moreMethods.gif)
 
 ## Validação
-Para validar valores utilizando o TIR RECORD PROTHEUS você precisa ativar o modo de validação, este modo de validação contempla o método CheckResult - Enchoice e CheckResult - Grid do TIR.
+Para validar valores utilizando o TIR Record PROTHEUS você precisa ativar o modo de validação, este modo de validação contempla o método CheckResult - Enchoice e CheckResult - Grid do TIR.
 
 ### CheckResult Enchoice/Grid
 Para validar os valores preenchidos em campos utilizando o TIR existe o método CheckResult, para gravarmos este passo você deve executar os seguintes passos:
