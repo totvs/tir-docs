@@ -2,5 +2,6 @@
 
 TIR é um módulo Python usado para criar scripts de teste para interfaces da web. Com ele, você pode criar e executar facilmente suítes de teste e casos de teste para qualquer sistema de interface web da Totvs com suporte, como o Protheus Webapp.
 
-[Link para documentação técnica do TIR](https://github.com/totvs/tir#documentation)
-[Link para contribuir com o projeto](https://github.com/totvs/tir#contributing)
+[Documentação técnica do TIR](https://totvs.github.io/tir/)
+
+[Repositório do projeto](https://github.com/totvs/tir)
