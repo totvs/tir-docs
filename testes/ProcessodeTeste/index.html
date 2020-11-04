@@ -1,0 +1,566 @@
+
+
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../images/icon-128.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+    
+    
+      
+        <title>ProcessodeTeste - TOTVS INTERFACE ROBOT</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.fe0cca5b.min.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a46bcfb3.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#03a9f4">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="light-blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#teste-de-software" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="TOTVS INTERFACE ROBOT" class="md-header-nav__button md-logo" aria-label="TOTVS INTERFACE ROBOT">
+      
+  <img src="../../images/RoboCor.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            TOTVS INTERFACE ROBOT
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              ProcessodeTeste
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TOTVS INTERFACE ROBOT" class="md-nav__button md-logo" aria-label="TOTVS INTERFACE ROBOT">
+      
+  <img src="../../images/RoboCor.png" alt="logo">
+
+    </a>
+    TOTVS INTERFACE ROBOT
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Bem-vindo ao TOTVS Interface Robot" class="md-nav__link">
+      Bem-vindo ao TOTVS Interface Robot
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Processo de Teste
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Processo de Teste" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Processo de Teste
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../EmConstrucao/" title="Introdução a Testes" class="md-nav__link">
+      Introdução a Testes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../TIR/" title="TIR" class="md-nav__link">
+      TIR
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      TIR Record
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="TIR Record" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        TIR Record
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tir-record/introducaoTirRecord/" title="Introdução" class="md-nav__link">
+      Introdução
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tir-record/ComoUsar/" title="Guia do usuário" class="md-nav__link">
+      Guia do usuário
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tir-record/faq/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Dashboard de Testes
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Dashboard de Testes" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Dashboard de Testes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dashboard/dashboard/" title="Introdução" class="md-nav__link">
+      Introdução
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../faqGeral/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#testes-manuais" class="md-nav__link">
+    Testes Manuais
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testes-automatizados" class="md-nav__link">
+    Testes Automatizados
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beneficios-teste-manuais-e-automatizados" class="md-nav__link">
+    Benefícios Teste Manuais e Automatizados
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custo-manual-x-automatizado" class="md-nav__link">
+    Custo Manual X Automatizado
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#planejamento-de-testes" class="md-nav__link">
+    PLANEJAMENTO DE TESTES
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="teste-de-software">TESTE DE SOFTWARE</h1>
+<p>Teste de software é uma etapa de controle de qualidade, utilizada para assegurar que o software está contemplando todas as funcionalidades esperadas e que estas estão funcionando corretamente.</p>
+<p>O processo de teste não irá garantir que o software estará isento de bugs, mas os esforços empenhados ampliarão a qualidade do produto final.</p>
+<p>![testes-tipos1]</p>
+<p>Usa-se tipos, níveis e técnicas de teste para verificar os objetivos dos testes em diversos momentos do desenvolvimento de software (ciclo de vida), de acordo com as necessidades de validação.
+É corriqueira a implementação de mais de um tipo, nível e técnica de teste empregada em um software para ampliar a garantia da qualidade do mesmo.</p>
+<p>Abaixo temos mais informações sobre estes itens:</p>
+<p><strong>Testes Funcionais (Caixa Preta):</strong> É feito para validar se as implementações atendem à função designada, ou seja, o resultado esperado. Bem como se não fere regras de negócio associadas às funcionalidades do software, que podem estar divergentes das determinações existentes em sua documentação.
+De modo geral, são utilizados para avaliar as funções do sistema, simulando a ação do usuário.</p>
+<p><strong>Teste de Sistema:</strong> Nestes testes são colocador parâmetros pré estabelecidos na aplicação, a fim de se obter um resultado esperado, podem ser executados manualmente ou de modo automatizado.</p>
+<p><strong>Teste de Regressão:</strong> Uma alteração feita em uma ou mais partes do sistema, seja correção ou implementação, pode afetar acidentalmente o comportamento de outras partes do mesmo código. O teste de regressão envolve a execução de testes para detectar esses efeitos colaterais indesejados.</p>
+<p><strong>Teste de Integração</strong> (contexto direcionado a automação de teste): O teste de integração tem por objetivo validar diferentes módulos em um sistema, onde a criação de novas funcionalidades ou alterações em antigas, podem modificar o comportamento de outras partes do sistema, que podem ter conexões entre si.</p>
+<p>A execução de testes funcionais, em todas suas variações, tem por objetivo garantir a funcionalidade do sistema levando em consideração os resultados esperados, garantindo que o produto atenda as especificações e necessidades.</p>
+<h2 id="testes-manuais">Testes Manuais</h2>
+<p>Os testes manuais, são realizados por seres humanos através de casos de testes que possuem o passo a passo para validar se a execução dos testes estão de acordo com o resultado esperado. No teste manual não há auxílio de nenhuma ferramenta para execução dos testes.</p>
+<h2 id="testes-automatizados">Testes Automatizados</h2>
+<p>No teste automatizado, os testes são executados através de ferramentas e frameworks que geram um script com elementos de entrada e saída, de acordo com o escopo definido e resultado esperado,valida se o mesmo passou ou falhou.</p>
+<h2 id="beneficios-teste-manuais-e-automatizados">Benefícios Teste Manuais e Automatizados</h2>
+<p>Para automatizar um cenário de teste é necessário ter conhecimento do resultado esperado, este pode ser adquirido através de um execução prévia, manual. Além deste ponto, para execução dos testes manuais leva-se em consideração o conhecimento do analista que está criando e testando os casos de teste.</p>
+<p>Em contra partida, execução manual onera tempo, aumentando custos, pode ser interrompida por fatores humanos, alheios a qualquer planejamento de projeto, tempo, alterando um possível fluxo predefinido.</p>
+<p>imagem tabela 1</p>
+<p>Em oposição ao teste manual, os testes automatizados contam com pouca interação humana, que é essencial para elaboração dos scripts, após este ponto, geralmente todos os demais processos são automatizados.</p>
+<p>Testes automatizados são explícitos, pois permitem saber por quais pontos o robô passou para chegar em determinado erro ou acerto.</p>
+<p>Outro benefício é a velocidade em comparação aos testes manuais, já que não há atraso entre o tempo de entrada e a verificação.
+Podemos usar como exemplo a execução de testes em mais ambientes diversos da mesma aplicação, automatizados, consegue-se obter um retorno rápido e preciso da execução em todos, visto que as mesmas ações realizadas manualmente gastariam mais tempo se executados por um usuário.</p>
+<p>Os contras da automação de testes, de início, será necessário demandar tempo para elaboração dos scripts, que além da parte técnica precisam ser consistente com o resultado esperado do sistema, em alguns casos, será necessário conhecer ou obter apoio de terceiros quanto a regra de negócio para criar os scripts.</p>
+<p>Importante garantir que todos os ambientes, bases e outros itens que serão utilizados na automação estejam preparados.</p>
+<p>A longo prazo ter automatização dos testes, é vantajosa pois reduz o tempo de utilização de recursos humanos nas equipes, permitindo que estes recursos possam utilizar este tempo para validar outras partes do sistema que em alguns casos, não será possível automatizar por exemplo, bem como outras validações importantes para garantir a qualidade do produto.</p>
+<p>![autXman]</p>
+<h2 id="custo-manual-x-automatizado">Custo Manual X Automatizado</h2>
+<p>De acordo com os itens mencionados acima, o custo tanto do teste manual quanto ao automatizado depende do contexto no qual serão aplicados.</p>
+<p>Para funcionalidades de teste rápido, que não demandam repetição, serão executadas em ambiente único, ou que demandariam mais tempos na criação do script de teste do que efetivamente validando o sistema, o teste manual é indicado , pois terá menor custo que o automatizado.</p>
+<p>Em contraponto, rotinas repetitivas, que demandam execução contínua, diversidade de ambientes e poderiam onerar muito tempo para ser executada, automação, a longo prazo, tem o custo reduzido. Pode-se utilizar ambos os métodos de acordo com a necessidade e disponibilidade, a fim de garantir a qualidade do sistema a ser testado.</p>
+<h2 id="planejamento-de-testes">PLANEJAMENTO DE TESTES</h2>
+<p>A primeira etapa do processo de teste é o planejamento. Esta etapa envolve as atividades que determinam quais serão as abordagens para atender os propósitos dos testes. O planejamento de testes irá resultar num documento chamado Plano de Teste. Neste documento estarão os objetivos e as abordagens dos testes.</p>
+<p>Os itens a serem testados devem ser definidos visando garantir a qualidade do produto entregue, abaixo temos a pirâmide de testes, que demonstra o melhor cenário para otimizar os testes e ampliar a garantia da qualidade.</p>
+<p>![piramidedetestes]</p>
+<p>Após a definição do que será testado, é necessário definir os meios a serem utilizados nas validações: tipos de teste, ferramentas, base de dados, ambiente e todas as informações necessárias ao andamento dos testes.</p>
+<p>MODELAGEM DE TESTE</p>
+<p>Neste item vamos citar alguns conceitos sobre modelagem de testes, ampliando as opções para iniciar a construção de casos de teste que visem garantir a qualidade do produto. Alguns exemplos que podem ser utilizados:</p>
+<ul>
+<li>Análise de valor limite</li>
+<li>Particionamento por equivalência</li>
+<li>Teste Randômico (Pareto)
+O detalhamento destes conceitos pode ser acessado através deste link: https://qualidadebr.wordpress.com/2009/03/07/tecnicas-de-modelagem-de-teste-parte-1/</li>
+</ul>
+<h1 id="-inserir-gif-com-as-imagens-sobre-tecmodelagem">---inserir gif com as imagens sobre tec.modelagem</h1>
+<p>Temos ainda, métodos simples como o modo de criação dos casos de teste, que podem utilizados para elaborar os mesmos em momentos distintos de acordo com a necessidade de quem irá manuseá-lo:</p>
+<p><strong>Identificado</strong></p>
+<p>Um caso de teste identificado, surge a partir do momento que o desenvolvedor, analista de testes ou integrantes de equipes que, geralmente, atuam com desenvolvimento , encontram um pontoitem do sistema que pode ou deve ser testado mas não será detalhado no primeiro momento.
+Sendo assim é criado um caso de teste que contenha somente a descrição do que deve ser testado. Não são inseridas pré-condições, parâmetros, passo-a-passo. Posteriormente, este caso de teste será devidamente detalhado para execução.
+Este caso de teste é indicado para momentos em que se tenha pouca disponibilidade de tempo para criar um caso completo, ou é necessário somente indicar um ponto a ser testado, para posteriormente, criar o caso de teste completo com todas as informações necessárias à execução.</p>
+<p>Ao final da criação deste tipo de caso de teste, não é possível testá-lo, pois ainda não contém todos os dados necessários para tal ação.</p>
+<p>--- Ver com Edmar o que acha de colocar um exemplo deste CT que conste no Kanoah</p>
+<p><strong>Detalhado</strong></p>
+<p>Nos casos de teste detalhados temos a construção de início a fim do caso de teste, incluindo dados como Objetivo, Parâmetros, Pré-condiçoes, Passo-a-passo e principalmente o Resultado esperado.
+Neste tipo de caso de teste, leva-se mais tempo para criação pois é necessário informar todos os dados pertinentes à execução do caso de teste, que ao final já deve estar pronto para ser executado.</p>
+<p>---Ver com o Edmar o que ele acha de colocar a situação de aprovação do CT por uma par.</p>
+<h4 id="pros-e-contras-de-cada-caso-de-teste">Prós e contras de cada caso de teste</h4>
+<p>Nos casos de teste <strong>Identificados</strong>, temos como pontos positivos: praticidade na criação, possibilidade de criar diversos futuros casos de teste de forma rápida, não depende necessáriamente de conhecimento técnico ou do sistema.
+Em contraponto, demanda tempo posteriormente para detalhamento do vai ser testado. Se a descrição não permitir fácil interpretação,pode dificultar ou até mesmo impossibilitar a criação do caso de teste, pois se o recurso responsável por descrever não compreender do que se trata, pode não criar corretamente. </p>
+<p>Para casos de teste <strong>Detalhados</strong> podemos demonstrar como pontos positivos: pronto para ser utilizado ao final da criação, informações completas, pronto para execução.</p>
+<p>As opções de elaboração de casos de teste citadas acima, são úteis e válidas quando utilizadas em momentos adequados a necessidade.</p>
+<h2 id="caracteristicas-do-caso-de-teste">Características do Caso de Teste</h2>
+<p>Independente do método utilizado para elaboração, é necessário atentar-se a características importantes para construção de casos de teste:</p>
+<p><em><strong>Possuir um título:</strong> claro, objetivo, rastreável e autoexplicativo: o título do Caso de Teste deve permitir que ele seja facilmente encontrado e reconhecido, deve deixar claro qual o seu objetivo.</em></p>
+<p><em><strong>Seguir um padrão:</strong> seguir um padrão de escrita é ideal, principalmente para facilitar a manutenibilidade dos casos de teste.</em></p>
+<p><em>Seguir um padrão permite compreender o que está descrito e alterar com mais facilidade, um exemplo simples, sempre colocar o módulo ou rotina entre colchetes no título do caso de teste; colocar campos e mensagens entre aspas, entre outros padrões que podem ser criados e seguidos pela equipe que atua com elaboração e manutenção dos casos de teste.</em></p>
+<p><em><strong>Ser objetivo e não exaustivo:</strong> sempre evitar casos de teste com muitos passos (mais de 20, por exemplo).
+Nem sempre é possível manter um número reduzido de passos, mas um caso de teste muito extenso se torna exaustivo e pode fazer com que não se preste atenção em todos os passos.</em></p>
+<p><em><strong>Tornar evidentes as situações de falha:</strong> o objetivo do caso de teste é encontrar bugs, portanto é necessário que o resultado esperado esteja claro. Desta forma, o testador saberá exatamente a resposta que o sistema deveria dar, deixando as falhas evidentes.</em></p>
+<p><em><strong>Ser autossuficiente:</strong> todas as informações necessárias para a realização do teste devem estar dentro do Caso de Teste, sejam os pré-requisitos, documentos complementares, etc.</em></p>
+<p><em><strong>Atingir a maior cobertura possível:</strong> os casos de teste devem cobrir o máximo de situações possíveis. É importante que existam casos de teste para cada fluxo documentado.</em></p>
+<p><em><strong>Estar sempre atualizado:</strong> um caso de teste desatualizado irá confundir quem estiver testando, pois os resultados esperados já não estarão mais de acordo com o documentado.</em></p>
+<p><em><strong>Ser reutilizável:</strong> se um caso de teste será utilizado somente uma vez, talvez nem haja a necessidade de escrevê-lo. O ideal é que os casos de teste sejam escritos para serem atualizados e reutilizados.</em></p>
+<p>Estas orientações auxiliam quanto a itens importantes a serem levados em consideração na escrita do caso de teste.</p>
+<p>Os casos de teste servirão como base para automação posteriormente.</p>
+<h3 id="em-que-momentos-podemos-aplicar-estes-conceitos">Em que momentos podemos aplicar estes conceitos?</h3>
+<p>A elaboração e manutenção de casos de teste acontecem em tempos diversos, abaixo serão citadas algumas ocasiões onde pode-se utilizar os conceitos que detalhamos acima:</p>
+<p>Desenvolvimento de nova funcionalidade: Para elaborar casos de teste que contemplem o necessário para a validação correta do sistema, garantido qualidade, integridade e correto funcionamento do que foi desenvolvido, podemos aplicar os conceitos citados.</p>
+<p>Pode-se utilizar também para manutenir os casos de teste. Devemos prezar sempre pela melhoria continua dos casos de teste, mantendo-os atualizados. Por vezes esta atualização dar-se a por alterações no sistema, que devem ser replicadas nas validações por testes.</p>
+<p>Ainda no cenário de desenvolvimento, além de implementações padrões no sistema, podemos ter o desenvolvimento de customizações que visam abranger situações especificas para um usuário ou mais. Estas implementações devem ser testadas, inclusive pelo usuário que irá utilizá-la a fim de garantir que atenderá as necessidades pretendidas.</p>
+<p>Um cenário comum é a realização de testes de regressão, que tem por objetivo garantir que o sistema legado (em uso), atende as especificações, garantindo sua correta funcionalidade. Nos testes de regressão, leva-se em consideração tanto sistema padrão quanto as customizações, garantindo que ambos permanecem funcionais. Exemplificando, na tela de pedido temos campos provenientes do produto padrão. Após solicitar o desenvolvimento de um campo utilizado pelo cliente "A", no momento da validação do sistema, deve-se elaborar casos de teste que verifiquem a funcionalidade do produto padrão e do campo implementado via customização.</p>
+<h2 id="mapa-mental">Mapa Mental</h2>
+<p>Ainda sobre modelagem de testes, um diagrama comum e muito utilizado é o Mapa Mental, que permite visualizar desde um contexto mais amplo até itens detalhados do sistema, de acordo com a estrutura de mapa definida por quem vai utilizá-lo.</p>
+<p>Por definição, o Mapa Mental é o nome dado a um tipo de diagrama voltado para a gestão de informações, conhecimento e capital intelectual. Sua principal característica é o auxílio na compreensão e solução de problemas, bem como promover o aprendizado acelerado. Pode ser aplicado a qualquer tarefa, atividade, de modo individual ou em grupo, para planejar qualquer tipo de evento. Trata-se de um método para planejamento e registro gráfico cada vez mais usado em todas as áreas de conhecimento humano.</p>
+<p>O Mapa deve ser criado e mantido pela equipe responsável e que detenha o conhecimento da mesma.</p>
+<p>Vale ressaltar a importância de manter o mapa mental sempre atualizado.</p>
+<p>---alterar imagem </p>
+<h2 id="ferramentas-de-gestao-de-testes">Ferramentas de Gestão de Testes</h2>
+<p>Bem como as ferramentas de automação de testes vem ganhando espaço e utilidade no dia a dia das equipes, ferramentas voltadas à gestão de testes tem sido cada vez mais úteis e necessárias, pois, a partir da utilização das mesmas é possível aprimorar atuação das equipes, reutilizar testes, acompanhar os resultados e atividades executadas.</p>
+<p>O objetivo dessas ferramentas está voltado para o controle dos testes, sejam eles manuais ou automatizados, permitindo que informações sejam coletadas e acompanhadas, possibilitando uma visão mais ampla para a tomada de decisão, fornecendo artefatos de acordo com os interesses e expectativas.</p>
+<p>O nicho de mercado para estes itens contam atualmente, com uma extensa lista de opções de ferramentas desde distribuição gratuita, à ferramentas com licenciamento pago.</p>
+<p>As ferramentas de gerenciamento podem ser utilizadas em todas as etapas do ciclo de vida do teste, e têm como grande vantagem a centralização de todas as informações relacionadas à evolução dos testes realizados no software.</p>
+<p>Abaixo algumas ferramentas utilizadas:</p>
+<p>---- imagem de ferramentas de gestão de testes </p>
+<p>Algumas ferramentas já executam ou tem integração com outras para gestão de defeitos.</p>
+<h1 id="setup-de-base">setup de base</h1>
+<h2 id="populado">Populado</h2>
+<h2 id="vazio">Vazio</h2>
+<p>AnteriorIntrodução
+PróximoAutomação de Testes
+Made with Material for MkDocs</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Digite para iniciar a busca", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.a68abb33.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

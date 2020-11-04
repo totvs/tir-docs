@@ -1,0 +1,1080 @@
+
+
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../images/icon-128.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+    
+    
+      
+        <title>Guia do usuário - TOTVS INTERFACE ROBOT</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.fe0cca5b.min.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a46bcfb3.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#03a9f4">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="light-blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tir-record-protheus-100" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="TOTVS INTERFACE ROBOT" class="md-header-nav__button md-logo" aria-label="TOTVS INTERFACE ROBOT">
+      
+  <img src="../../images/RoboCor.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            TOTVS INTERFACE ROBOT
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Guia do usuário
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TOTVS INTERFACE ROBOT" class="md-nav__button md-logo" aria-label="TOTVS INTERFACE ROBOT">
+      
+  <img src="../../images/RoboCor.png" alt="logo">
+
+    </a>
+    TOTVS INTERFACE ROBOT
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Bem-vindo ao TOTVS Interface Robot" class="md-nav__link">
+      Bem-vindo ao TOTVS Interface Robot
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Processo de Teste
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Processo de Teste" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Processo de Teste
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../testes/EmConstrucao/" title="Introdução a Testes" class="md-nav__link">
+      Introdução a Testes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../TIR/" title="TIR" class="md-nav__link">
+      TIR
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      TIR Record
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="TIR Record" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        TIR Record
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../introducaoTirRecord/" title="Introdução" class="md-nav__link">
+      Introdução
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Guia do usuário
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Guia do usuário" class="md-nav__link md-nav__link--active">
+      Guia do usuário
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalacao" class="md-nav__link">
+    Instalação
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-instalar-no-firefox" class="md-nav__link">
+    Como instalar no Firefox:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setupclass" class="md-nav__link">
+    SetupClass
+  </a>
+  
+    <nav class="md-nav" aria-label="SetupClass">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apos-instalar-configure-o-metodo-setupclass-do-tir" class="md-nav__link">
+    Após instalar configure o método "SetupClass" do TIR:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criacao" class="md-nav__link">
+    Criação
+  </a>
+  
+    <nav class="md-nav" aria-label="Criação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#agora-crie-os-arquivos-e-comece-a-gravar-as-acoes" class="md-nav__link">
+    Agora crie os arquivos e comece a gravar as ações:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parar-gravacao" class="md-nav__link">
+    Parar gravação
+  </a>
+  
+    <nav class="md-nav" aria-label="Parar gravação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clique-no-botao-parar-para-que-acoes-indesejadas-nao-sejam-gravadas" class="md-nav__link">
+    Clique no botão "Parar" para que ações indesejadas não sejam gravadas:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#executar-acao-de-clique-em-um-botao" class="md-nav__link">
+    Executar ação de clique em um botão
+  </a>
+  
+    <nav class="md-nav" aria-label="Executar ação de clique em um botão">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-executar-as-acoes-de-clique-em-botoes-setbutton" class="md-nav__link">
+    Como executar as ações de clique em botões (SetButton):
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pesquisar-um-registro" class="md-nav__link">
+    Pesquisar um registro:
+  </a>
+  
+    <nav class="md-nav" aria-label="Pesquisar um registro:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#realizar-pesquisa-metodo-searchbrowse" class="md-nav__link">
+    Realizar pesquisa, método SearchBrowse:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preenchimento-de-inputs-em-um-enchoice" class="md-nav__link">
+    Preenchimento de inputs em um Enchoice:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cliques-em-labels-ou-em-folders" class="md-nav__link">
+    Cliques em labels ou em folders:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grid" class="md-nav__link">
+    GRID
+  </a>
+  
+    <nav class="md-nav" aria-label="GRID">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setvalue-na-grid" class="md-nav__link">
+    SetValue na GRID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-utilizacao-setvalue-grid" class="md-nav__link">
+    Exemplo utilização SetValue (GRID).
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#botao-metodos" class="md-nav__link">
+    Botão "+Métodos"
+  </a>
+  
+    <nav class="md-nav" aria-label="Botão "+Métodos"">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-opcao-metodos-do-tir-record-permite-que-voce-crie-alguns-metodos-adicionas" class="md-nav__link">
+    A opção +Métodos do TIR Record permite que você crie alguns métodos adicionas:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-de-utilizacao" class="md-nav__link">
+    Exemplo de utilização:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validacao" class="md-nav__link">
+    Validação
+  </a>
+  
+    <nav class="md-nav" aria-label="Validação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#checkresult-enchoicegrid" class="md-nav__link">
+    CheckResult Enchoice/Grid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-enchoice" class="md-nav__link">
+    Exemplo Enchoice
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-grid" class="md-nav__link">
+    Exemplo Grid
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-finalizar-e-baixar" class="md-nav__link">
+    Como finalizar e baixar:
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../faq/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Dashboard de Testes
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Dashboard de Testes" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Dashboard de Testes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dashboard/dashboard/" title="Introdução" class="md-nav__link">
+      Introdução
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../faqGeral/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalacao" class="md-nav__link">
+    Instalação
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-instalar-no-firefox" class="md-nav__link">
+    Como instalar no Firefox:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setupclass" class="md-nav__link">
+    SetupClass
+  </a>
+  
+    <nav class="md-nav" aria-label="SetupClass">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apos-instalar-configure-o-metodo-setupclass-do-tir" class="md-nav__link">
+    Após instalar configure o método "SetupClass" do TIR:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criacao" class="md-nav__link">
+    Criação
+  </a>
+  
+    <nav class="md-nav" aria-label="Criação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#agora-crie-os-arquivos-e-comece-a-gravar-as-acoes" class="md-nav__link">
+    Agora crie os arquivos e comece a gravar as ações:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parar-gravacao" class="md-nav__link">
+    Parar gravação
+  </a>
+  
+    <nav class="md-nav" aria-label="Parar gravação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clique-no-botao-parar-para-que-acoes-indesejadas-nao-sejam-gravadas" class="md-nav__link">
+    Clique no botão "Parar" para que ações indesejadas não sejam gravadas:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#executar-acao-de-clique-em-um-botao" class="md-nav__link">
+    Executar ação de clique em um botão
+  </a>
+  
+    <nav class="md-nav" aria-label="Executar ação de clique em um botão">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-executar-as-acoes-de-clique-em-botoes-setbutton" class="md-nav__link">
+    Como executar as ações de clique em botões (SetButton):
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pesquisar-um-registro" class="md-nav__link">
+    Pesquisar um registro:
+  </a>
+  
+    <nav class="md-nav" aria-label="Pesquisar um registro:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#realizar-pesquisa-metodo-searchbrowse" class="md-nav__link">
+    Realizar pesquisa, método SearchBrowse:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preenchimento-de-inputs-em-um-enchoice" class="md-nav__link">
+    Preenchimento de inputs em um Enchoice:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cliques-em-labels-ou-em-folders" class="md-nav__link">
+    Cliques em labels ou em folders:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grid" class="md-nav__link">
+    GRID
+  </a>
+  
+    <nav class="md-nav" aria-label="GRID">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setvalue-na-grid" class="md-nav__link">
+    SetValue na GRID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-utilizacao-setvalue-grid" class="md-nav__link">
+    Exemplo utilização SetValue (GRID).
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#botao-metodos" class="md-nav__link">
+    Botão "+Métodos"
+  </a>
+  
+    <nav class="md-nav" aria-label="Botão "+Métodos"">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-opcao-metodos-do-tir-record-permite-que-voce-crie-alguns-metodos-adicionas" class="md-nav__link">
+    A opção +Métodos do TIR Record permite que você crie alguns métodos adicionas:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-de-utilizacao" class="md-nav__link">
+    Exemplo de utilização:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#validacao" class="md-nav__link">
+    Validação
+  </a>
+  
+    <nav class="md-nav" aria-label="Validação">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#checkresult-enchoicegrid" class="md-nav__link">
+    CheckResult Enchoice/Grid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-enchoice" class="md-nav__link">
+    Exemplo Enchoice
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemplo-grid" class="md-nav__link">
+    Exemplo Grid
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-finalizar-e-baixar" class="md-nav__link">
+    Como finalizar e baixar:
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="tir-record-protheus-100">TIR RECORD PROTHEUS 1.0.0</h1>
+<ul>
+<li>Esse gravador tem como objetivo capturar ações que o usuário realiza no <a href="https://tdn.totvs.com/pages/viewpage.action?pageId=448596783">Protheus WebApp (Smartclient+HTML)</a> e transformar essas ações em um script para o framework <a href="https://github.com/totvs/tir">TIR</a>.</li>
+</ul>
+<details class="note" open="open"><summary>Nota</summary><p>Cada ação é gravada, por isso, leia com atenção cada tópico e utilize os recursos da ferramenta para uma melhor experiência.</p>
+</details>
+<h2 id="instalacao">Instalação</h2>
+<h3 id="como-instalar-no-firefox">Como instalar no Firefox:</h3>
+<p>Na versão atual, a extensão será distribuida através da <a href="https://addons.mozilla.org/en-US/firefox/addon/tir-record/">loja do Firefox</a>.</p>
+<h2 id="setupclass">SetupClass</h2>
+<h3 id="apos-instalar-configure-o-metodo-setupclass-do-tir">Após instalar configure o método "SetupClass" do TIR:</h3>
+<p>SetupClass é um método que é executado antes de todos os outros casos de testes. <a href="https://docs.python.org/3/library/unittest.html?highlight=setupclass#unittest.TestCase.setUpClass">Mais informações...</a>.</p>
+<ul>
+<li>No TIR Record para o SetupClass você precisa informar os métodos:</li>
+<li>Método <a href="https://totvs.github.io/tir/webapp.html?highlight=setup#tir.main.Webapp.Setup">Setup</a>: contendo as informações dos campos Programa Inicial, Database, Grupo, Filial e Ambiente.</li>
+<li>
+<p>Método <a href="https://totvs.github.io/tir/webapp.html?highlight=program#tir.main.Webapp.Program">Program</a>: contendo as informações para o preenchimento do campo que pesquisa a rotina/programa.</p>
+<p><img alt="" src="../gifs/SetupClass.gif" /></p>
+</li>
+</ul>
+<h2 id="criacao">Criação</h2>
+<h3 id="agora-crie-os-arquivos-e-comece-a-gravar-as-acoes">Agora crie os arquivos e comece a gravar as ações:</h3>
+<p>Após realizar as configurações iniciais (configurar o método SetupClass), iremos criar os scripts:</p>
+<details class="warning" open="open"><summary>Aviso</summary><p>Lembre-se que o TIR realiza grande parte das ações iniciais para entrar no ambiente então considere os métodos "Setup" e "Program" para o ponto de partida na hora da gravação.</p>
+</details>
+<ul>
+<li>Clique no icone do TIR Record.</li>
+<li>Clique em criar.</li>
+<li>Informe o nome dos script de teste.</li>
+<li>Informe o nome do primeiro caso de teste.</li>
+</ul>
+<p><img alt="" src="../gifs/Criando.gif" /></p>
+<h2 id="parar-gravacao">Parar gravação</h2>
+<h3 id="clique-no-botao-parar-para-que-acoes-indesejadas-nao-sejam-gravadas">Clique no botão "Parar" para que ações indesejadas não sejam gravadas:</h3>
+<p>O botão "Parar" evita que ações realizadas no Protheus WebApp sejam gravadas caso deseje realizar alguma ação que não deve ser gravada utilize esse botão.</p>
+<p><img alt="" src="../gifs/Pause.gif" /></p>
+<h2 id="executar-acao-de-clique-em-um-botao">Executar ação de clique em um botão</h2>
+<h3 id="como-executar-as-acoes-de-clique-em-botoes-setbutton">Como executar as ações de clique em botões (SetButton):</h3>
+<p>As ações de clique em botões no TIR são realizadas utilizando o método SetButton, este método é capaz de realizar um clique em um botão normal ou em um botão com subníveis.O TIR Record já é capaz de reconhecer quando um botão possui subníveis (".tmenupopup") após o clique.</p>
+<details class="todo" open="open"><summary>SetButton</summary><p>SetButton é um método responsável por realizar as ações de clique em botões. <a href="https://totvs.github.io/tir/webapp.html?highlight=setbutton#tir.main.Webapp.SetButton">Mais informações...</a>.</p>
+</details>
+<p><img alt="" src="../gifs/btn.gif" /></p>
+<p>Uso do SetButton(Subníveis):
+<img alt="" src="../gifs/btn_x_outrasacoes.gif" /></p>
+<h2 id="pesquisar-um-registro">Pesquisar um registro:</h2>
+<h3 id="realizar-pesquisa-metodo-searchbrowse">Realizar pesquisa, método SearchBrowse:</h3>
+<p><img alt="" src="../gifs/SearchBrowse.gif" /></p>
+<h2 id="preenchimento-de-inputs-em-um-enchoice">Preenchimento de inputs em um Enchoice:</h2>
+<details class="warning" open="open"><summary>Aviso</summary><p>Os preenchimentos de inputs precisam de um cuidado especial, pois, o gatilho para que o TIR Record capture os valores de um input é quando o campo perde o foco.</p>
+</details>
+<p>Algumas situações que devem ser consideradas:</p>
+<ul>
+<li>
+<p>ComboBox:
+    Inputs do tipo ComboBox devem ser preenchidos utilizando cliques e não atalhos do teclado.</p>
+</li>
+<li>
+<p>Inputs sem o atributo nome presente no <em>HTML</em>:
+    Inputs sem o atributo nome presente no html irão disparar uma notificação no browser, o usuário então deve clicar na label mais próxima ao input.</p>
+</li>
+<li>
+<p>CheckBox:
+    Para que o clique em um check box seja reconhecido não clique no texto, a ação de clique em um checkbox só é capturada quando o usuário realiza a ação no componente.</p>
+</li>
+</ul>
+<p><img alt="" src="../gifs/SetValueEnchoice.gif" /></p>
+<h2 id="cliques-em-labels-ou-em-folders">Cliques em labels ou em folders:</h2>
+<p>Ao realizar o click em textos (elementos "label/span ...") ou em pastas (elementos ".tfolder") o TIR Record reconhece o clique e grava a ação veja o exemplo a seguir:
+<img alt="" src="../gifs/label_folder.gif" /></p>
+<h2 id="grid">GRID</h2>
+<p>Atenção a forma de gravação em grid ocorre de forma diferente do padrão, leia abaixo como deve ser realizada cada ação para cada método.</p>
+<h3 id="setvalue-na-grid">SetValue na GRID</h3>
+<p>O SetValue em uma grid reconhece automaticamente qual o número da grid na tela e qual número da linha.
+Para que o SetValue seja gravado de forma correta antes de começar a preencher os campos da grid siga os seguintes passos:</p>
+<pre><code>- Pare o gravador.
+- Preencha os campos desejados.
+- Clique em continuar no gravador.
+- Agora clique em cima do campo desejado com o botão **esquerdo** do mouse.
+- Após todos os campos serem gravados, lembre-se de adicionar o LoadGrid()
+    utilizando o botão "+ Métodos &gt; LoadGrid()" do gravador.
+</code></pre>
+<h3 id="exemplo-utilizacao-setvalue-grid">Exemplo utilização SetValue (GRID).</h3>
+<p><img alt="" src="../gifs/SetValueGrid.gif" /></p>
+<h2 id="botao-metodos">Botão "+Métodos"</h2>
+<h3 id="a-opcao-metodos-do-tir-record-permite-que-voce-crie-alguns-metodos-adicionas">A opção +Métodos do TIR Record permite que você crie alguns métodos adicionas:</h3>
+<ul>
+<li>Método AsserTrue():
+    O método AssertTrue ou AssertFalse deve ser utilizado ao final de cada caso de teste, <a href="https://totvs.github.io/tir/webapp.html?highlight=assert#tir.main.Webapp.AssertTrue">acesse a documentação do TIR para mais informações</a></li>
+<li>
+<p>Método AsserFalse():
+    O método AssertTrue ou AssertFalse deve ser utilizado ao final de cada caso de teste, <a href="https://totvs.github.io/tir/webapp.html?highlight=assert#tir.main.Webapp.AssertFalse">acesse a documentação do TIR para mais informações</a></p>
+</li>
+<li>
+<p>Método LoadGrid():
+    Os métodos (SetValue, CheckResult, <em>SetKey('Down')</em>) quando utilizados com o parâmetro <strong>grid = True</strong> necessitam de um comando a mais para que as ações sejam executadas,
+    utilize o comando LoadGrid para isso. <a href="https://totvs.github.io/tir/webapp.html?highlight=loadgrid">Clique aqui para mais informações</a></p>
+</li>
+<li>
+<p>Método CheckResult ( modo de validação ):
+    Quando a caixa do CheckResult estiver marcada o modo de validação do TIR Record PROTHEUS é ativado, este modo de validação muda a funcionalidade da extensão as gravações de comandos SetValue não serão mais efetivadas e agora com o clique do botão esquerdo do mouse é possível gravar o comando CheckResult do TIR ( <strong>Atenção válido para Enchoice/Grid</strong>)</p>
+</li>
+</ul>
+<h3 id="exemplo-de-utilizacao">Exemplo de utilização:</h3>
+<p><img alt="" src="../gifs/moreMethods.gif" /></p>
+<h2 id="validacao">Validação</h2>
+<p>Para validar valores utilizando o TIR Record PROTHEUS você precisa ativar o modo de validação, este modo de validação contempla o método CheckResult - Enchoice e CheckResult - Grid do TIR.</p>
+<h3 id="checkresult-enchoicegrid">CheckResult Enchoice/Grid</h3>
+<p>Para validar os valores preenchidos em campos utilizando o TIR existe o método CheckResult, para gravarmos este passo você deve executar os seguintes passos:</p>
+<ul>
+<li>Clicar no botão +Métodos.</li>
+<li>Clicar em CheckResult (Uma notificação será lançada avisando que o modo de validação foi ativado).</li>
+<li>Clicar nos campos nos quais deseja validar</li>
+</ul>
+<h3 id="exemplo-enchoice">Exemplo Enchoice</h3>
+<p><img alt="" src="../gifs/modoValidacaoEnchoice.gif" /></p>
+<h3 id="exemplo-grid">Exemplo Grid</h3>
+<p><img alt="" src="../gifs/checkResultGrid.gif" /></p>
+<h2 id="como-finalizar-e-baixar">Como finalizar e baixar:</h2>
+<p>Para finalizar e baixar o script gerado clique no botão "Finalizar" e depois clique no botão "Baixar".</p>
+<details class="warning" open="open"><summary>Aviso</summary><p>Lembre-se que ao final de cada caso de teste deve ser adicionado um comando AssertTrue ou AssertFalse.</p>
+</details>
+<p><img alt="" src="../gifs/baixar.gif" /></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../introducaoTirRecord/" title="Introdução" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Introdução
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../faq/" title="FAQ" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Próximo
+                </span>
+                FAQ
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Digite para iniciar a busca", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.a68abb33.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
