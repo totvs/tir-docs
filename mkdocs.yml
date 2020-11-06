@@ -18,7 +18,6 @@ nav:
     - 'TIR Record':
       - 'Introdução': './tir-record/introducaoTirRecord.md'
       - 'Guia do usuário': './tir-record/ComoUsar.md'
-      - 'FAQ': './tir-record/faq.md'
     - 'Dashboard de Testes':
       - 'Introdução': './dashboard/dashboard.md'
       # - 'Introdução': './dashboard/index.md'
