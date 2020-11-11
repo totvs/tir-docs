@@ -1,8 +1,8 @@
-# INSTALAÇÃO DO PORTAL
+# INSTALAÇÃO DO PORTAL (Front)
 
 - Esse Portal tem como intuito exibir os gráficos com execuções que ocorreram nos ciclos.
 
-!!! aviso
+???+ warning "Aviso"
     Após baixar o pacote com o portal deve ser selecionado um servidor web de sua preferência para colocar seu portal, como sugestão existe o Nginx, mas fique a vontade para selecionar o que esteja mais acostumado.
 
 ## Como instalar o Nginx:
@@ -22,10 +22,13 @@ Após isso deve seguir os seguintes passos:
             try_files $uri $uri/ /index.html;
         }
     }
-- Copiar os arquivos do portal para a pasta /html
-- Abrir a pasta e executar o executavél nginx.exe
+- Baixe os arquivos do portal  ( [Clique aqui para baixar](https://www.google.com.br/))
+- Agora você deve descompactar o arquvio baixado e mover os arquivos para a pasta /html
+- Abrir a pasta e executar o arquivo nginx.exe
 
 - Veja o exemplo a seguir:
 
     ![](./gifs/instalacao.gif)
+
+# INSTALAÇÃO DO PORTAL (Back-end)
 
