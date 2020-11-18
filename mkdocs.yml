@@ -19,11 +19,10 @@ nav:
       - 'Introdução': './tir-record/introducaoTirRecord.md'
       - 'Guia do usuário': './tir-record/ComoUsar.md'
     - 'Dashboard de Testes':
-      - 'Introdução': './dashboard/dashboard.md'
-      # - 'Introdução': './dashboard/index.md'
-      # - 'Instalação do Serviço': './dashboard/BackEnd.md'
-      # - 'Instalação do Portal': './dashboard/FrontEnd.md'
-      # - 'Guia do usuário': './dashboard/ComoUsar.md'
+       - 'Introdução': './dashboard/index.md'
+       - 'Instalação do Serviço': './dashboard/BackEnd.md'
+       - 'Instalação do Portal': './dashboard/FrontEnd.md'
+       - 'Guia do usuário': './dashboard/ComoUsar.md'
     - FAQ: faqGeral.md
 
 markdown_extensions:

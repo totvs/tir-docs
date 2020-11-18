@@ -4,7 +4,8 @@ Serviço utilizado para gravação e consulta dos logs dos testes realizados pel
 O pacote servicelog necessita do pacote do [Node.js](https://nodejs.org/) versão v12+.
 
 ## Configuração
-Após a instalação procurar na raiz do projeto a pasta /src/config/configApp.js e realizar a configuração do serviço conforme os parâmetros abaixo.
+[Clique aqui e baixe o arquivo zip](https://github.com/totvs/tir/raw/master/dashboard/servicelog-api-build.zip).
+Após realizar o download utilize o arquivo ".env" para realizar a configuração do serviço conforme os parâmetros abaixo.
 
 - databaseType - Tipo de banco de dados que serão armazenados os logs de execuções, podendo receber como parâmetros 'mssql' para Microsoft SQL ou 'sqlite' para SQLITE.
 - databaseStorage - Quando informado o banco de dados SQLITE deve ser informado o caminho do banco que por default fica na pasta db do projeto.
@@ -48,7 +49,7 @@ No padrão está da seguinte forma:
  - \* 7,12,18,23 * * * - Dessa forma será executado o serviço as 7hrs, 12hrs, 18hrs e 23hrs todos os dias.
 
 ## Instalação
-Após a instalação procurar na raiz do projeto a pasta /scripts-bats e executar os scripts na sequência abaixo e em modo de administrador.
+Depois de extrair os aquivos e configurar o arquivo ".env" localize o diretório "scripts-bats" e execute os scripts utilizando o prompt de comando do windows na sequência abaixo e em modo de administrador.
 
  - install.bat - Descompactar os pacotes do npm.
  - service-mode.bat - Instalação a api em modo de serviço.
