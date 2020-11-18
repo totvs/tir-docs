@@ -22,7 +22,7 @@ Após isso deve seguir os seguintes passos:
             try_files $uri $uri/ /index.html;
         }
     }
-- Baixe os arquivos do portal  ( [Clique aqui para baixar](https://www.google.com.br/))
+- Baixe os arquivos do portal  ( [Clique aqui para baixar](https://github.com/totvs/tir/raw/master/dashboard/servicelog-front.zip))
 - Agora você deve descompactar o arquvio baixado e mover os arquivos para a pasta /html
 - Abrir a pasta e executar o arquivo nginx.exe
 
@@ -30,5 +30,4 @@ Após isso deve seguir os seguintes passos:
 
     ![](./gifs/instalacao.gif)
 
-# INSTALAÇÃO DO PORTAL (Back-end)
 
