@@ -22,6 +22,7 @@ nav:
        - 'Introdução': './dashboard/index.md'
        - 'Instalação do Serviço': './dashboard/BackEnd.md'
        - 'Instalação do Portal': './dashboard/FrontEnd.md'
+       - 'Configuração do TIR': './dashboard/configurandoTIR.md'
        - 'Guia do usuário': './dashboard/ComoUsar.md'
     - FAQ: faqGeral.md
 
