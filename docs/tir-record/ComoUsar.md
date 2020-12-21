@@ -78,6 +78,13 @@ Algumas situações que devem ser consideradas:
 Ao realizar o click em textos (elementos "label/span ...") ou em pastas (elementos ".tfolder") o TIR Record reconhece o clique e grava a ação veja o exemplo a seguir:
 ![](./gifs/label_folder.gif)
 
+## Cliques em uma "Tree" (ClickTree)
+Para gravar a ação de cliques em árvores(ClickTree) você deve clicar exatamente no componente que realiza a ação e no ultimo item clique sobre o texto.
+
+???+ warning "Aviso"
+    Clique somente uma vez no componente para expandir ou conter a árvore ("tree").
+
+![](./gifs/ClickTree.gif)
 
 ## GRID
 Atenção a forma de gravação em grid ocorre de forma diferente do padrão, leia abaixo como deve ser realizada cada ação para cada método.
