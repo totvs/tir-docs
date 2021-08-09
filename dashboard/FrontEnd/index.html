@@ -9,8 +9,8 @@
       
       
       
-      <link rel="shortcut icon" href="../../images/icon-128.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+      <link rel="icon" href="../../images/icon-128.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.2">
     
     
       
@@ -18,10 +18,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.19753c6b.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1118c9be.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.196e0c26.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ba0d045b.min.css">
         
           
           
@@ -33,15 +33,17 @@
     
       
         
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
       
     
     
     
     
       
+
+
     
     
   </head>
@@ -53,15 +55,17 @@
     
     
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="light-blue" data-md-color-accent="light-blue">
-      
   
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
         
-        <a href="#instalacao-do-portal-front" class="md-skip">
+        <a href="#instalacao-do-portal" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -70,49 +74,55 @@
       
     </div>
     
-      
-
-<header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="../.." title="TOTVS INTERFACE ROBOT" class="md-header-nav__button md-logo" aria-label="TOTVS INTERFACE ROBOT">
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="TOTVS INTERFACE ROBOT" class="md-header__button md-logo" aria-label="TOTVS INTERFACE ROBOT" data-md-component="logo">
       
   <img src="../../images/RoboCor.png" alt="logo">
 
     </a>
-    <label class="md-header-nav__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
-    <div class="md-header-nav__title" data-md-component="header-title">
-      
-        <div class="md-header-nav__ellipsis">
-          <span class="md-header-nav__topic md-ellipsis">
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
             TOTVS INTERFACE ROBOT
           </span>
-          <span class="md-header-nav__topic md-ellipsis">
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
             
               Instalação do Portal
             
           </span>
         </div>
-      
+      </div>
     </div>
     
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
       
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -140,14 +150,16 @@
         <div class="md-main__inner md-grid">
           
             
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
 
+
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="TOTVS INTERFACE ROBOT" class="md-nav__button md-logo" aria-label="TOTVS INTERFACE ROBOT">
+    <a href="../.." title="TOTVS INTERFACE ROBOT" class="md-nav__button md-logo" aria-label="TOTVS INTERFACE ROBOT" data-md-component="logo">
       
   <img src="../../images/RoboCor.png" alt="logo">
 
@@ -161,110 +173,126 @@
       
       
 
-
-  <li class="md-nav__item">
-    <a href="../.." class="md-nav__link">
-      Bem-vindo ao TOTVS Interface Robot
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Bem-vindo ao TOTVS Interface Robot
+      </a>
+    </li>
+  
 
     
       
       
       
 
-
-  <li class="md-nav__item md-nav__item--nested">
+  
+  
+  
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
-    <label class="md-nav__link" for="nav-2">
-      Processo de Teste
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Processo de Teste" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        <span class="md-nav__icon md-icon"></span>
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
         Processo de Teste
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../testes/Introdu%C3%A7%C3%A3oaTestedeSoftware/" class="md-nav__link">
-      Introdução a Testes
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../../TIR/" class="md-nav__link">
-      TIR
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
-    <label class="md-nav__link" for="nav-4">
-      TIR Record
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="TIR Record" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
         <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Processo de Teste" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Processo de Teste
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testes/Introdu%C3%A7%C3%A3oaTestedeSoftware/" class="md-nav__link">
+        Introdução a Testes
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIR/" class="md-nav__link">
+        TIR
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
         TIR Record
+        <span class="md-nav__icon md-icon"></span>
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+      <nav class="md-nav" aria-label="TIR Record" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          TIR Record
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tir-record/introducaoTirRecord/" class="md-nav__link">
+        Introdução
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tir-record/ComoUsar/" class="md-nav__link">
+        Guia do usuário
+      </a>
+    </li>
+  
+
           
-
-
-  <li class="md-nav__item">
-    <a href="../../tir-record/introducaoTirRecord/" class="md-nav__link">
-      Introdução
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../tir-record/ComoUsar/" class="md-nav__link">
-      Guia do usuário
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
+        </ul>
+      </nav>
+    </li>
+  
 
     
       
@@ -272,72 +300,77 @@
       
 
   
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
-    <label class="md-nav__link" for="nav-5">
-      Dashboard de Testes
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Dashboard de Testes" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        <span class="md-nav__icon md-icon"></span>
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      <label class="md-nav__link" for="__nav_5">
         Dashboard de Testes
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../" class="md-nav__link">
-      Introdução
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../BackEnd/" class="md-nav__link">
-      Instalação do Serviço
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Instalação do Portal
         <span class="md-nav__icon md-icon"></span>
       </label>
+      <nav class="md-nav" aria-label="Dashboard de Testes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Dashboard de Testes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Introdução
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BackEnd/" class="md-nav__link">
+        Instalação do Serviço
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
-    <a href="./" class="md-nav__link md-nav__link--active">
-      Instalação do Portal
-    </a>
-    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
       
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Instalação do Portal
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Instalação do Portal
+      </a>
+      
+        
 <nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
   
   
     
@@ -347,18 +380,32 @@
       <span class="md-nav__icon md-icon"></span>
       Índice
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#como-instalar-o-nginx" class="md-nav__link">
-    Como instalar o Nginx:
+  <a href="#instalacao-e-configuracao-do-nginx" class="md-nav__link">
+    Instalação e configuração do Nginx:
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#nginxconf" class="md-nav__link">
-    nginx.conf
+  <a href="#veja-um-exemplo-a-seguir" class="md-nav__link">
+    Veja um exemplo a seguir:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observacoes" class="md-nav__link">
+    Observações
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nginx-como-servico-do-windows" class="md-nav__link">
+    Nginx como serviço do windows
   </a>
   
 </li>
@@ -366,49 +413,54 @@
     </ul>
   
 </nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configurandoTIR/" class="md-nav__link">
+        Configuração do TIR
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ComoUsar/" class="md-nav__link">
+        Guia do usuário
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../configurandoTIR/" class="md-nav__link">
-      Configuração do TIR
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../ComoUsar/" class="md-nav__link">
-      Guia do usuário
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
       
       
       
 
-
-  <li class="md-nav__item">
-    <a href="../../faqGeral/" class="md-nav__link">
-      FAQ
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqGeral/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
 
     
   </ul>
@@ -418,11 +470,13 @@
               </div>
             
             
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
 <nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
   
   
     
@@ -432,18 +486,32 @@
       <span class="md-nav__icon md-icon"></span>
       Índice
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#como-instalar-o-nginx" class="md-nav__link">
-    Como instalar o Nginx:
+  <a href="#instalacao-e-configuracao-do-nginx" class="md-nav__link">
+    Instalação e configuração do Nginx:
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#nginxconf" class="md-nav__link">
-    nginx.conf
+  <a href="#veja-um-exemplo-a-seguir" class="md-nav__link">
+    Veja um exemplo a seguir:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observacoes" class="md-nav__link">
+    Observações
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nginx-como-servico-do-windows" class="md-nav__link">
+    Nginx como serviço do windows
   </a>
   
 </li>
@@ -456,47 +524,64 @@
               </div>
             
           
-          <div class="md-content">
+          <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                <h1 id="instalacao-do-portal-front">INSTALAÇÃO DO PORTAL (Front)</h1>
+                <h1 id="instalacao-do-portal">INSTALAÇÃO DO PORTAL</h1>
 <ul>
-<li>Esse Portal tem como intuito exibir os gráficos com execuções que ocorreram nos ciclos.</li>
+<li>Esse Portal tem como intuito exibir os gráficos com execuções que ocorrerão nos ciclos.</li>
 </ul>
-<details class="warning" open="open"><summary>Aviso</summary><p>Após baixar o pacote com o portal deve ser selecionado um servidor web de sua preferência para colocar seu portal, como sugestão existe o Nginx, mas fique a vontade para selecionar o que esteja mais acostumado.</p>
-</details>
-<h2 id="como-instalar-o-nginx">Como instalar o Nginx:</h2>
-<p>Entre na página <a href="http://nginx.org/en/download.html">Nginx</a> na parte de download e selecione o pacote conforme seu sistema operacional e faça o download.
+<p>!!! aviso
+    Após baixar o pacote com o portal deve ser selecionado um servidor web de sua preferência para colocar seu portal, como recomendação neste exemplo usaremos o Nginx, mas fique a vontade para selecionar o que esteja mais acostumado.</p>
+<h2 id="instalacao-e-configuracao-do-nginx">Instalação e configuração do Nginx:</h2>
+<p>Entre na página <a href="http://nginx.org/en/download.html">Nginx</a> e na parte de download e selecione o pacote conforme seu sistema operacional.
 Após isso deve seguir os seguintes passos:</p>
-<ul>
+<ol>
 <li>Descompactar o nginx no caminho desejado.</li>
-<li>Abrir o arquivo conf/nginx.conf localizando o trecho que contém "server {" e colocar e inserir o seguinte trecho:</li>
-</ul>
-<h2 id="nginxconf">nginx.conf</h2>
-<pre><code>server {
-    listen       8066;
-    server_name  localhost;
-
-    location / {
-        root   html;
-        index  index.html index.htm;
-        try_files $uri $uri/ /index.html;
-    }
-}
+<li>Abrir o arquivo "conf/nginx.conf"</li>
+<li>
+<p>Dentro da chave <code>server</code> inclua trecho a seguir:</p>
+<pre><code>listen       8066;
+server_name  localhost;
 </code></pre>
-<ul>
-<li>Baixe os arquivos do portal  ( <a href="https://github.com/totvs/tir/raw/master/dashboard/servicelog-front.zip">Clique aqui para baixar</a>)</li>
-<li>Agora você deve descompactar o arquvio baixado e mover os arquivos para a pasta /html</li>
-<li>
-<p>Abrir a pasta e executar o arquivo nginx.exe</p>
 </li>
 <li>
-<p>Veja o exemplo a seguir:</p>
+<p>Faça o mesmo para a chave <code>location /</code> com o código abaixo:</p>
+<pre><code>root   html;
+index  index.html index.htm;
+try_files $uri $uri/ /index.html;
+</code></pre>
+<blockquote>
+<p>Sua alteração ficará algo semelhante ao seguinte:
+<img alt="" src="../images/NGINX_CONFIG.png" /></p>
+</blockquote>
+</li>
+<li>
+<p>Copie os arquivos do portal para a pasta /html</p>
+</li>
+<li>
+<p>Por fim na pasta raiz do nginx e execute o <code>nginx.exe</code></p>
+</li>
+</ol>
+<h2 id="veja-um-exemplo-a-seguir">Veja um exemplo a seguir:</h2>
 <p><img alt="" src="../gifs/instalacao.gif" /></p>
-</li>
-</ul>
+<blockquote>
+<h2 id="observacoes">Observações</h2>
+<p>A porta do web server deve ser a mesma <code>APP_PORT</code> configurada arquivo .env.
+Nesse caso fica no arquivo html/config/appConfig.json</p>
+</blockquote>
+<h2 id="nginx-como-servico-do-windows">Nginx como serviço do windows</h2>
+<p>Para definir o nginx como um serviço do windows siga o seguinte procedimento:</p>
+<ol>
+<li>Na raiz do projeto vá até o diretório "/scripts-bats/nginx/"</li>
+<li>Execute o <code>Install-service-server.bat</code> <strong>em modo admnistrador</strong>.</li>
+<li>No campo "Path" defina o executavel do nginx e no campo "Startup directory" defina o local onde se encontra o executavel.  <br />
+<img alt="" src="../images/nginx_nssm_gui.png" /></li>
+<li>Clique em "install service" e aguarde finalizar.</li>
+<li>Pronto agora o que serviço ja está instalado é só roda-lo com <code>Run-service-server.bat</code></li>
+</ol>
                 
               
               
@@ -507,45 +592,46 @@ Após isso deve seguir os seguintes passos:</p>
             </article>
           </div>
         </div>
+        
       </main>
       
         
 <footer class="md-footer">
   
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
         
-          <a href="../BackEnd/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <a href="../BackEnd/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Instalação do Serviço" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              Instalação do Serviço
             </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Anterior
-                </span>
-                Instalação do Serviço
-              </div>
-            </div>
-          </a>
+          </div>
+        </a>
+      
+      
         
-        
-          <a href="../configurandoTIR/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Próximo
-                </span>
-                Configuração do TIR
-              </div>
+        <a href="../configurandoTIR/" class="md-footer__link md-footer__link--next" aria-label="Próximo: Configuração do TIR" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              Configuração do TIR
             </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -555,6 +641,7 @@ Após isso deve seguir os seguintes passos:</p>
         <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
           Material for MkDocs
         </a>
+        
       </div>
       
     </div>
@@ -562,19 +649,13 @@ Após isso deve seguir os seguintes passos:</p>
 </footer>
       
     </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Buscar", "search.result.placeholder": "Digite para iniciar a busca", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
     
-      <script src="../../assets/javascripts/vendor.0ac82a11.min.js"></script>
-      <script src="../../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "search.config.lang": "pt", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Buscar", "search.result.placeholder": "Digite para iniciar a busca", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
-      
-      <script>
-        app = initialize({
-          base: "../..",
-          features: [],
-          search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
-          }, typeof search !== "undefined" && search)
-        })
-      </script>
+    
+      <script src="../../assets/javascripts/bundle.2b46852b.min.js"></script>
       
     
   </body>
