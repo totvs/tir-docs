@@ -15,6 +15,7 @@ nav:
       # - 'Introdução a Testes de Software': './testes/ProcessodeTeste.md'
       # - 'Automação': './testes/Automação.md'
     - TIR: TIR.md
+      - 'Primeiros Passos': './tir/start.md'
     - 'TIR Record':
       - 'Introdução': './tir-record/introducaoTirRecord.md'
       - 'Guia do usuário': './tir-record/ComoUsar.md'
