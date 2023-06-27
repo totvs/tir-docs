@@ -9,19 +9,23 @@ theme:
   favicon: images/icon-128.png
 
 nav:
-    - Bem-vindo ao Test Interface Robot : 'index.md'
+    - Bem vindo ao Test Interface Robot : 'index.md'
     - 'Processo de Teste':
       - 'Introdução a Testes': './testes/IntroduçãoaTestedeSoftware.md'
       # - 'Introdução a Testes de Software': './testes/ProcessodeTeste.md'
       # - 'Automação': './testes/Automação.md'
-    - TIR: TIR.md
+    - 'TIR': 
+      - 'Introdução': 'TIR.md'
+      - 'Primeiros Passos': './tir/first.md'
+      - 'Execução via Docker': './tir/execdocker.md'
     - 'TIR Record':
       - 'Introdução': './tir-record/introducaoTirRecord.md'
       - 'Guia do usuário': './tir-record/ComoUsar.md'
     - 'Dashboard de Testes':
        - 'Introdução': './dashboard/index.md'
-       - 'Instalação do Serviço': './dashboard/BackEnd.md'
-       - 'Instalação do Portal': './dashboard/FrontEnd.md'
+       - 'Instalação': './dashboard/BackEnd.md'
+       #- 'Instalação do Portal': './dashboard/FrontEnd.md'
+       - 'Instalação via Docker': './dashboard/docker.md'       
        - 'Configuração do TIR': './dashboard/configurandoTIR.md'
        - 'Guia do usuário': './dashboard/ComoUsar.md'
     - FAQ: faqGeral.md

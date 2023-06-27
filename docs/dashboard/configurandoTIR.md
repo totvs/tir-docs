@@ -9,7 +9,7 @@ O arquivo que realiza as configurações do TIR é nomeado como config.json, se 
     - ExecId: Específica um id para execução sendo geralmente a data atual
     - LogUrl1: Url do serviço
 
-## Exemplo de configuração:
+>### Exemplo de configuração:
 ```json
 "NewLog": true,
 "MotExec": "HOMOLOGAÇÃO_TIR",
