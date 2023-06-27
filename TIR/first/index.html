@@ -9,13 +9,17 @@
       
       
       
+        <link rel="prev" href="../../TIR/">
+      
+      
+        <link rel="next" href="../execdocker/">
       
       <link rel="icon" href="../../images/icon-128.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.17">
     
     
       
-        <title>Faq - TEST INTERFACE ROBOT</title>
+        <title>Primeiros Passos - TEST INTERFACE ROBOT</title>
       
     
     
@@ -62,6 +66,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#primeiros-passos" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -92,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Faq
+              Primeiros Passos
             
           </span>
         </div>
@@ -241,14 +250,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
       
       
       
@@ -257,7 +268,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           TIR
@@ -282,11 +293,59 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../tir/first/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Primeiros Passos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Primeiros Passos
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pip-install-tir_framework-upgrade" class="md-nav__link">
+    pip install tir_framework --upgrade
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplos" class="md-nav__link">
+    Exemplos:
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -298,7 +357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tir/execdocker/" class="md-nav__link">
+      <a href="../execdocker/" class="md-nav__link">
         Execução via Docker
       </a>
     </li>
@@ -347,7 +406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../introducaoTirRecord/" class="md-nav__link">
+      <a href="../../tir-record/introducaoTirRecord/" class="md-nav__link">
         Introdução
       </a>
     </li>
@@ -361,7 +420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ComoUsar/" class="md-nav__link">
+      <a href="../../tir-record/ComoUsar/" class="md-nav__link">
         Guia do usuário
       </a>
     </li>
@@ -512,6 +571,30 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pip-install-tir_framework-upgrade" class="md-nav__link">
+    pip install tir_framework --upgrade
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplos" class="md-nav__link">
+    Exemplos:
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -526,21 +609,25 @@
                   
 
 
-  <h1>Faq</h1>
-
-<details class="todo" open="open">
-<summary>Perguntas frequentes</summary>
-<ul>
-<li>Qual versão de WebApp utilizar com o TIR Record?<blockquote>
-<p>É recomendado utilizar uma versão 4.6.0 ou superior.</p>
+<h1 id="primeiros-passos">Primeiros Passos</h1>
+<p>Antes de instalar o TIR você deve realizar alguns pré-requisitos. </p>
+<ol>
+<li>Será necessário instalar o <a href="https://www.python.org/downloads/release/python-379/">Python</a> na versão 3.7.9</li>
+<li>Feito a instalação do python, é necessário que você tenha ou faça o download do <a href="https://www.mozilla.org/pt-BR/firefox/new/">Firefox</a>. </li>
+<li>Para facilitar a criação de scripts e execução do TIR, recomendamos o uso do <a href="https://code.visualstudio.com/download">VSCode</a>. </li>
+<li>Para o uso do TIR também é necessário instalar e configurar o <a href="https://tdn.totvs.com/display/tec/WebApp+-+Configurando+nativamente+o+Application+Server+como+servidor+Web">Webapp Protheus</a>.</li>
+<li>Tendo os passos acima configurados, abrir o powershell ou cmd para a instalação via comando:<blockquote>
+<h4 id="pip-install-tir_framework-upgrade">pip install tir_framework --upgrade</h4>
 </blockquote>
 </li>
-<li>Onde eu consigo acessar a documentação do TIR?<blockquote>
-<p>Você pode acessar por esse <a href="https://github.com/totvs/tir">link</a>.</p>
+</ol>
+<p>Para mais Informações seguir os passos do nosso <a href="https://github.com/totvs/tir#installation">TIR - GITHUB</a>.</p>
+<p>Realizada a instalação, baixe o exemplo de script e config.json da pasta <a href="https://github.com/totvs/tir-script-samples">templates de script</a> e execute os mesmos para que você confirme que sua instalação está correta.</p>
+<p>É necessário que você configure o arquivo <a href="https://github.com/totvs/tir-script-samples/tree/master/basic_template">config.json</a>, na mesma pasta que você irá criar seu script com as informações referentes ao seu ambiente.</p>
+<blockquote>
+<h3 id="exemplos">Exemplos:</h3>
 </blockquote>
-</li>
-</ul>
-</details>
+<p>Nós temos alguns exemplos de script na pasta <a href="https://github.com/totvs/tir-script-samples">templates de script</a> e <a href="https://totvs.github.io/tir/configjson.html">aqui</a> você encontra a descrição de cada parâmetro do config.json. </p>
 
 
 

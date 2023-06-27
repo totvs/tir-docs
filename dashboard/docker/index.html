@@ -9,13 +9,17 @@
       
       
       
+        <link rel="prev" href="../BackEnd/">
+      
+      
+        <link rel="next" href="../configurandoTIR/">
       
       <link rel="icon" href="../../images/icon-128.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.17">
     
     
       
-        <title>Faq - TEST INTERFACE ROBOT</title>
+        <title>Instalação via Docker - TEST INTERFACE ROBOT</title>
       
     
     
@@ -62,6 +66,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#configuracao" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -92,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Faq
+              Instalação via Docker
             
           </span>
         </div>
@@ -347,7 +356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../introducaoTirRecord/" class="md-nav__link">
+      <a href="../../tir-record/introducaoTirRecord/" class="md-nav__link">
         Introdução
       </a>
     </li>
@@ -361,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ComoUsar/" class="md-nav__link">
+      <a href="../../tir-record/ComoUsar/" class="md-nav__link">
         Guia do usuário
       </a>
     </li>
@@ -381,14 +390,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
       
       
       
@@ -397,7 +408,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           Dashboard de Testes
@@ -410,7 +421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dashboard/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         Introdução
       </a>
     </li>
@@ -424,7 +435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dashboard/BackEnd/" class="md-nav__link">
+      <a href="../BackEnd/" class="md-nav__link">
         Instalação
       </a>
     </li>
@@ -436,11 +447,55 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../dashboard/docker/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Instalação via Docker
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Instalação via Docker
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuracao" class="md-nav__link">
+    Configuração:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observacoes" class="md-nav__link">
+    Observações:
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -452,7 +507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dashboard/configurandoTIR/" class="md-nav__link">
+      <a href="../configurandoTIR/" class="md-nav__link">
         Configuração do TIR
       </a>
     </li>
@@ -466,7 +521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dashboard/ComoUsar/" class="md-nav__link">
+      <a href="../ComoUsar/" class="md-nav__link">
         Guia do usuário
       </a>
     </li>
@@ -513,6 +568,28 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuracao" class="md-nav__link">
+    Configuração:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observacoes" class="md-nav__link">
+    Observações:
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -526,21 +603,24 @@
                   
 
 
-  <h1>Faq</h1>
+  <h1>Instalação via Docker</h1>
 
-<details class="todo" open="open">
-<summary>Perguntas frequentes</summary>
-<ul>
-<li>Qual versão de WebApp utilizar com o TIR Record?<blockquote>
-<p>É recomendado utilizar uma versão 4.6.0 ou superior.</p>
+<h2 id="configuracao">Configuração:</h2>
+<p>Instalar o Docker seguindo as orientações da página do desenvolvedor.</p>
+<ol>
+<li>Baixar arquivo build_dashboard.zip disponível neste  <a href="https://github.com/totvs/tir/tree/master/dashboard/docker">link</a>.</li>
+<li>Descompactar o .zip para uma pasta e executar o comando "docker-compose up -d" dentro da pasta onde está o arquivo docker-compose.yml</li>
+<li>Acessar no browser o endereço localhost:8066.</li>
+</ol>
+<p>Para subir os logs de execução do TIR basta enviar para a api em localhost:3333</p>
+<blockquote>
+<h2 id="observacoes">Observações:</h2>
+<p>Caso as portas defaults(3333 ou 8066) estiverem em uso, basta alterar o arquivo docker-compose.yml na seção "ports" conforme o exemplo abaixo:</p>
 </blockquote>
-</li>
-<li>Onde eu consigo acessar a documentação do TIR?<blockquote>
-<p>Você pode acessar por esse <a href="https://github.com/totvs/tir">link</a>.</p>
-</blockquote>
-</li>
-</ul>
-</details>
+<pre><code>"8199:8080"
+"8198:3333"
+</code></pre>
+<p>As imagens estão disponíveis no <a href="https://hub.docker.com/r/totvsengpro/tir-dashboard">Docker hub</a></p>
 
 
 
