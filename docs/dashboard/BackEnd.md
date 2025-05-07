@@ -4,7 +4,7 @@ Serviço utilizado para gravação e consulta dos logs dos testes realizados pel
 O pacote servicelog necessita do pacote do [Node.js](https://nodejs.org/) versão v12+.
 
 ## Configuração
-[Clique aqui e baixe o arquivo zip](https://github.com/totvs/tir/raw/master/dashboard/servicelog-api-build.zip).
+[Clique aqui e baixe o arquivo zip](https://github.com/totvs/tir/raw/refs/heads/main/dashboard/servicelog-api-build.zip).
 Após a instalação procurar na pasta raiz do projeto o arquivo `.env` e realizar a configuração do serviço conforme os parâmetros abaixo.
 
 - **database** - A Tag "DB" é responsavél pela comunicação do banco e possui os seguintes parâmetros:
