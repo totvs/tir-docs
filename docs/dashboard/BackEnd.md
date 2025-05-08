@@ -91,7 +91,7 @@ Por fim será necessario criar as tabelas através de um comando conforme a segu
 # INSTALAÇÃO DO PORTAL
 
 - Esse Portal tem como intuito exibir os gráficos com execuções que ocorrerão nos ciclos.
-- [Clique aqui e baixe o arquivo zip](https://github.com/totvs/tir/raw/master/dashboard/servicelog-front.zip).
+- [Clique aqui e baixe o arquivo zip](https://github.com/totvs/tir/raw/refs/heads/main/dashboard/servicelog-front.zip).
 
 !!! aviso
     Após baixar o pacote com o portal deve ser selecionado um servidor web de sua preferência para colocar seu portal, como recomendação neste exemplo usaremos o Nginx, mas fique a vontade para selecionar o que esteja mais acostumado.

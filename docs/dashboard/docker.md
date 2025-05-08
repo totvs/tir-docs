@@ -2,7 +2,7 @@
 
 Instalar o Docker seguindo as orientações da página do desenvolvedor.
 
-1. Baixar arquivo build_dashboard.zip disponível neste  [link](https://github.com/totvs/tir/tree/master/dashboard/docker).
+1. Baixar arquivo build_dashboard.zip disponível neste  [link](https://github.com/totvs/tir/tree/main/dashboard/docker).
 2. Descompactar o .zip para uma pasta e executar o comando "docker-compose up -d" dentro da pasta onde está o arquivo docker-compose.yml
 3. Acessar no browser o endereço localhost:8066.
 

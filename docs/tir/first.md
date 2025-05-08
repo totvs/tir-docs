@@ -2,7 +2,7 @@
 
 Antes de instalar o TIR você deve realizar alguns pré-requisitos. 
 
-1. Será necessário instalar o [Python](https://www.python.org/downloads/release/python-379/) na versão 3.7.9
+1. Será necessário instalar o [Python](https://www.python.org/downloads/release/python-31210/) na versão 3.12.*
 2. Feito a instalação do python, é necessário que você tenha ou faça o download do [Firefox](https://www.mozilla.org/pt-BR/firefox/new/). 
 3. Para facilitar a criação de scripts e execução do TIR, recomendamos o uso do [VSCode](https://code.visualstudio.com/download
 ). 
