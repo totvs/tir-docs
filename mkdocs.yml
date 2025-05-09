@@ -16,8 +16,8 @@ nav:
       # - 'Automação': './testes/Automação.md'
     - 'TIR': 
       - 'Introdução': 'TIR.md'
-      - 'Primeiros Passos': './tir/first.md'
-      - 'Execução via Docker': './tir/execdocker.md'
+      - 'Primeiros Passos': './TIR/first.md'
+      - 'Execução via Docker': './TIR/execdocker.md'
     - 'TIR Record':
       - 'Introdução': './tir-record/introducaoTirRecord.md'
       - 'Guia do usuário': './tir-record/ComoUsar.md'
