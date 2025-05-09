@@ -4,8 +4,7 @@ Antes de instalar o TIR você deve realizar alguns pré-requisitos.
 
 1. Será necessário instalar o [Python](https://www.python.org/downloads/release/python-31210/) na versão 3.12.*
 2. Feito a instalação do python, é necessário que você tenha ou faça o download do [Firefox](https://www.mozilla.org/pt-BR/firefox/new/). 
-3. Para facilitar a criação de scripts e execução do TIR, recomendamos o uso do [VSCode](https://code.visualstudio.com/download
-). 
+3. Para facilitar a criação de scripts e execução do TIR, recomendamos o uso do [VSCode](https://code.visualstudio.com/download). 
 4. Para o uso do TIR também é necessário instalar e configurar o [Webapp Protheus](https://tdn.totvs.com/display/tec/WebApp+-+Configurando+nativamente+o+Application+Server+como+servidor+Web).
 5. Tendo os passos acima configurados, abrir o powershell ou cmd para a instalação via comando:
 >#### pip install tir_framework --upgrade
