@@ -1,5 +1,4 @@
 site_name: TEST INTERFACE ROBOT
-site_url: 'https://totvs.github.io/tir-docs/'
 theme:
   name: material
   language: pt
@@ -15,8 +14,8 @@ nav:
       - 'Introdução a Testes': './testes/IntroduçãoaTestedeSoftware.md'
     - 'TIR': 
       - 'Introdução': 'TIR.md'
-      - 'Primeiros Passos': './TIR/FirstSteps.md'
-      - 'Execução via Docker': './TIR/ExecDocker.md'
+      - 'Primeiros Passos': './tir-framework/FirstSteps.md'
+      - 'Execução via Docker': './tir-framework/ExecDocker.md'
     - 'TIR Record':
       - 'Introdução': './tir-record/introducaoTirRecord.md'
       - 'Guia do usuário': './tir-record/ComoUsar.md'
