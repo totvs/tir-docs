@@ -1,5 +1,5 @@
 site_name: TEST INTERFACE ROBOT
-site_url: https://totvs.github.io/tir-docs/
+site_url: 'https://totvs.github.io/tir-docs/'
 theme:
   name: material
   language: pt
