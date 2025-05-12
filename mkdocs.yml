@@ -15,8 +15,8 @@ nav:
       - 'Introdução a Testes': './testes/IntroduçãoaTestedeSoftware.md'
     - 'TIR': 
       - 'Introdução': 'TIR.md'
-      - 'Primeiros Passos': './tir/first.md'
-      - 'Execução via Docker': './tir/execdocker.md'
+      - 'Primeiros Passos': './tir/FirstSteps.md'
+      - 'Execução via Docker': './tir/ExecDocker.md'
     - 'TIR Record':
       - 'Introdução': './tir-record/introducaoTirRecord.md'
       - 'Guia do usuário': './tir-record/ComoUsar.md'
