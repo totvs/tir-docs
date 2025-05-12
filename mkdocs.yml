@@ -19,12 +19,19 @@ nav:
     - 'TIR Record':
       - 'Introdução': './tir-record/introducaoTirRecord.md'
       - 'Guia do usuário': './tir-record/ComoUsar.md'
+      - TIR Record FAQ: 'tir-record/faq.md'
     - 'Dashboard de Testes':
        - 'Introdução': './dashboard/index.md'
        - 'Instalação': './dashboard/BackEnd.md'
        - 'Instalação via Docker': './dashboard/docker.md'       
        - 'Configuração do TIR': './dashboard/configurandoTIR.md'
        - 'Guia do usuário': './dashboard/ComoUsar.md'
+    - DashBoard: 'DashBoard.md'
+    - 'Testes':
+      - 'Automação': 'testes/Automação.md'
+      - 'Base de Dados': 'testes/BasedeDados.md'
+      - 'Em Construção': 'testes/EmConstrucao.md'
+      - 'Processo de Teste': 'testes/ProcessodeTeste.md'
     - FAQ: faqGeral.md
 
 markdown_extensions:
