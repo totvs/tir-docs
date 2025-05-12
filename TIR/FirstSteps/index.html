@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://totvs.github.io/tir-docs/tir/execdocker/">
+        <link rel="canonical" href="https://totvs.github.io/tir-docs/tir/FirstSteps/">
       
       
-        <link rel="prev" href="../first/">
+        <link rel="prev" href="../../TIR/">
       
       
-        <link rel="next" href="../../tir-record/introducaoTirRecord/">
+        <link rel="next" href="../ExecDocker/">
       
       
       <link rel="icon" href="../../images/icon-128.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Execução via Docker - TEST INTERFACE ROBOT</title>
+        <title>Primeiros Passos - TEST INTERFACE ROBOT</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#execucao-via-docker" class="md-skip">
+        <a href="#primeiros-passos" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Execução via Docker
+              Primeiros Passos
             
           </span>
         </div>
@@ -352,29 +352,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../first/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Primeiros Passos
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -392,7 +369,7 @@
   
   
   <span class="md-ellipsis">
-    Execução via Docker
+    Primeiros Passos
     
   </span>
   
@@ -405,7 +382,7 @@
   
   
   <span class="md-ellipsis">
-    Execução via Docker
+    Primeiros Passos
     
   </span>
   
@@ -428,18 +405,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#docker-pull-totvsengprotir" class="md-nav__link">
+  <a href="#pip-install-tir_framework-upgrade" class="md-nav__link">
     <span class="md-ellipsis">
-      docker pull totvsengpro/tir
+      pip install tir_framework --upgrade
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#exemplos" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      Exemplos:
     </span>
   </a>
   
@@ -449,6 +426,29 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ExecDocker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Execução via Docker
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -943,18 +943,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#docker-pull-totvsengprotir" class="md-nav__link">
+  <a href="#pip-install-tir_framework-upgrade" class="md-nav__link">
     <span class="md-ellipsis">
-      docker pull totvsengpro/tir
+      pip install tir_framework --upgrade
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#exemplos" class="md-nav__link">
     <span class="md-ellipsis">
-      
+      Exemplos:
     </span>
   </a>
   
@@ -976,29 +976,25 @@
 
 
 
-<h1 id="execucao-via-docker">Execução via Docker</h1>
-<p>É possível a execução do TIR via Docker. Para isso é necessário que:</p>
+<h1 id="primeiros-passos">Primeiros Passos</h1>
+<p>Antes de instalar o TIR você deve realizar alguns pré-requisitos. </p>
 <ol>
-<li>Baixe os exemplos dos arquivos que serão necessários para a execução na pasta <a href="https://github.com/totvs/tir-script-samples/tree/master/basic_template">basic template</a>.</li>
-<li>No PowerShell, acesse a pasta onde descompactou os arquivos.</li>
-<li>Execute o comando:<blockquote>
-<h4 id="docker-pull-totvsengprotir">docker pull totvsengpro/tir</h4>
-</blockquote>
-</li>
-<li>Em seguida, execute o comando conforme exemplo abaixo:<blockquote>
-<h4 id="_1"></h4>
-<pre><code>docker run --rm -ti \
--v ${PWD}:/local \
--v /etc/passwd:/etc/passwd \
--v /etc/groups:/etc/groups \
--e DISPLAY=:0 \
--u $(id -u):$(id -g) \
-totvsengpro/tir:latest python3 /local/ATFA036TESTSUITE.py
-</code></pre>
+<li>Será necessário instalar o <a href="https://www.python.org/downloads/release/python-31210/">Python</a> na versão 3.12.*.</li>
+<li>Após a instalação do Python, é necessário que você tenha ou faça o download do <a href="https://www.mozilla.org/pt-BR/firefox/new/">Firefox</a>.</li>
+<li>Para facilitar a criação de scripts e execução do TIR, recomendamos o uso do <a href="https://code.visualstudio.com/download">VSCode</a>.</li>
+<li>Para o uso do TIR, também é necessário instalar e configurar o <a href="https://tdn.totvs.com/display/tec/WebApp+-+Configurando+nativamente+o+Application+Server+como+servidor+Web">Webapp Protheus</a>.</li>
+<li>Com os passos acima configurados, abra o PowerShell ou CMD para a instalação via comando:<blockquote>
+<h4 id="pip-install-tir_framework-upgrade">pip install tir_framework --upgrade</h4>
 </blockquote>
 </li>
 </ol>
-<p>As imagens estão disponíveis em <a href="https://hub.docker.com/r/totvsengpro/tir">Docker Hub</a>.</p>
+<p>Para mais informações, siga os passos do nosso <a href="https://github.com/totvs/tir#installation">TIR - GITHUB</a>.</p>
+<p>Após a instalação, baixe o exemplo de script e o arquivo <code>config.json</code> da pasta <a href="https://github.com/totvs/tir-script-samples">templates de script</a> e execute-os para confirmar que sua instalação está correta.</p>
+<p>É necessário configurar o arquivo <a href="https://github.com/totvs/tir-script-samples/tree/master/basic_template">config.json</a> na mesma pasta onde você criará seu script, com as informações referentes ao seu ambiente.</p>
+<blockquote>
+<h3 id="exemplos">Exemplos:</h3>
+</blockquote>
+<p>Nós temos alguns exemplos de script na pasta <a href="https://github.com/totvs/tir-script-samples">templates de script</a> e <a href="https://totvs.github.io/tir/configjson.html">aqui</a> você encontra a descrição de cada parâmetro do <code>config.json</code>.</p>
 
 
 
