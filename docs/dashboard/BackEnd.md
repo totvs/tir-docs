@@ -1,140 +1,149 @@
-# Serviço
-Serviço utilizado para gravação e consulta dos logs dos testes realizados pelo TIR.
 
-O pacote servicelog necessita do pacote do [Node.js](https://nodejs.org/) versão v12+.
+# Guia de Instalação e Configuração da Dashboard de Logs
 
-## Configuração
-[Clique aqui e baixe o arquivo zip](https://github.com/totvs/tir/raw/refs/heads/main/dashboard/servicelog-api-build.zip).
-Após a instalação procurar na pasta raiz do projeto o arquivo `.env` e realizar a configuração do serviço conforme os parâmetros abaixo.
 
-- **database** - A Tag "DB" é responsavél pela comunicação do banco e possui os seguintes parâmetros:
-	- **TYPE** - Tipo de banco de dados que serão armazenados os logs de execuções, podendo receber como parâmetros `mssql` para Microsoft SQL ou `sqlite` para SQLITE.
-	- **STORAGE** - Apenas caso a opção de banco seja SQLITE. Representa o caminho do banco que por default fica na pasta "db" do projeto: `./db/dashboard.sqlite`.
-	- **INSTANCENAME** - Nome da Instância do banco de dados.
-	- **HOST** - Ip do servidor que está o banco de dados.
-	- **USERNAME** - Usuário do banco de dados.
-	- **PASSWORD** - Senha do usuário do banco de dados.
-	- **DATABASE** - Nome do banco de dados criado para receber os registros.
+## Serviço
 
-- **PATH_SERVER** - Caminho da pasta onde seram enviados os arquivos json caso o servidor não consiga gravar o registro no banco de dados.
-- **PATH_PROCESSED** - Pasta de arquivos que já foram processados quando o servidor apresentar uma contigência.
+Este serviço é utilizado para gravação e consulta dos logs dos testes realizados pelo TIR.
 
-- **APP_PORT** - Porta que será inicializado a aplicação.
+> Requisito: Node.js v12+ [Baixe aqui](https://nodejs.org/)
 
-- **SCHEDULE** - Nessa opção é configurado qual será frequência de verificação de arquivos jsons da pasta configurada no "pathServer". 
-Ela possui uma sintaxe abaixa
+---
 
-#### Campos permitidos
-```
- # ┌────────────── segundos (optional)
- # │ ┌──────────── minutos
- # │ │ ┌────────── horas
- # │ │ │ ┌──────── dias do mês
- # │ │ │ │ ┌────── mês
- # │ │ │ │ │ ┌──── dia da semana
- # │ │ │ │ │ │
- # │ │ │ │ │ │
- # * * * * * *
-```
+### ✨ Instalação
 
-### Valores permitidos
+1. Baixe o pacote: [servicelog-api-build.zip](https://github.com/totvs/tir/raw/refs/heads/main/dashboard/servicelog-api-build.zip)
+2. Extraia e abra a pasta do projeto
+3. Configure o arquivo `.env` conforme instruções abaixo
 
-|     campos   | valores permitidos  |
-|--------------|---------------------|
-|   segundos   |         0-59        |
-|   minutos    |         0-59        |
-|     hora     |         0-23        |
-|  dia do mês  |         1-31        |
-|      mês     |     1-12 (or names) |
-|dia da semana |    0-7 (nomes ou números, 0 ou 7 domingo à sábado)  |
+---
 
-- No padrão está da seguinte forma:
-	` * 7,12,18,23 * * * ` - Dessa forma será executado o serviço as 7hrs, 12hrs, 18hrs e 23hrs todos os dias.
+### ⚙️ Configuração do Arquivo `.env`
 
-## Instalação
-Após a instalação procurar na raiz do projeto a pasta /scripts-bats e executar os scripts na sequência abaixo e em modo de administrador.
+#### Banco de Dados (`DB`)
 
-1. install.bat - Descompactar os pacotes do npm.
-2. service-mode.bat - Instalação a api em modo de serviço.
-3. run.bat - Inicializa o serviço.
+- `TYPE`: modelo de banco onde sera `mssql` ou `sqlite`
+- `STORAGE`: Caminho para o arquivo do banco de dados. Por padrão, o arquivo é salvo em ./db/dashboard.sqlite. (apenas para sqlite) 
+- Para MSSQL:
+    - `INSTANCENAME`: Nome da instância do SQL Server (apenas mssql).
+    - `HOST`: Endereço IP ou hostname do servidor onde o banco está hospedado.
+    - `USERNAME`: Nome de usuário com permissões de acesso ao banco.
+    - `PASSWORD`:Senha do usuário do banco.
+    - `DATABASE`: Nome do banco de dados onde os registros serão armazenados.
 
-Em caso de necessidade poderá desligar o serviço com o bat abaixo.
+#### Caminhos de Arquivos
 
- - stop.bat - Desliga o serviço
+- `PATH_SERVER`: Diretório onde serão salvos arquivos JSONs em caso de falha na gravação no banco.
+- `PATH_PROCESSED`: Diretório onde os arquivos JSONs serão movidos após terem sido processados com sucesso, especialmente em cenários de recuperação.
 
-## Observações
->Caso utilize o **Microsoft SQL Server** será necessario habilitar a comunicação TCP e ativar o SQL Server Browser (responsável por escutar as solicitações de entrada de recursos do Microsoft SQL Server e fornecer informações sobre as instâncias do SQL Server instaladas no computador) conforme o passo a passo a seguir:
+#### Porta da Aplicação
 
-### Habilitar portas TCP do Banco
-1. Pressione *Windows key + R*
-2. Na caixa de dialogo digite *Digite compmgmt.msc*
-3. Navegue por "*Serviços e aplicativos > SQL Server Configuration Manager > SQL Server Network Configuration*" e selecione a mesma instancia do banco informado no arquivo `.env`
-4. Após selecionada a instância, no menu a direita clique com o botão direito sob o protocolo e habilite **faça isso para todas as opções**:
-    ![](./images/MC_TCP.png "PORTAS TCP HABILITADAS")
+- `APP_PORT`: Porta de inicialização do serviço (ex: 3333)
+
+#### Agendamento
+- `SCHEDULE`: Define a frequência de verificação de arquivos jsons da pasta configurada no "pathServer".
+
+- Utiliza a sintaxe padrão de agendamento cron. **Default**:
+  ```
+   * 7,12,18,23 * * *
+  ```
+  Executa às 7h, 12h, 18h e 23h diariamente.
+
+> Valores válidos: segundos (0-59), minutos (0-59), horas (0-23), dia do mês (1-31), mês (1-12), dia da semana (0-7)
+
+---
+
+### 🚀 Inicialização
+
+No diretório `/scripts-bats`, execute os scripts abaixo como **administrador**:
+
+1. `install.bat` - Instala dependências via npm  
+2. `service-mode.bat` - Instala a API como serviço  
+3. `run.bat` - Inicia o serviço  
+
+Para parar:
+
+- `stop.bat`
+
+---
+
+## ℹ️ Procedimento para Microsoft SQL Server
+
+### Habilitar TCP/IP
+
+1. Pressione `Win + R` > digite `compmgmt.msc`
+2. Navegue até: `Serviços e aplicativos > SQL Server Configuration Manager > SQL Server Network Configuration`  
+3. Selecione a instância correta (mesma informada no .env) e habilite os protocolos TCP no menu exibido.
+  - ![](./images/MC_TCP.png "PORTAS TCP HABILITADAS")
 
 
 ### Habilitar serviço SQL Server Browser
-1. Dentro do menu lateral "*SQL Server Configuration Manager*" selecione a opção "*SQL Server Services*"
-2. No menu a direita clique com o botão direito sob a opção *SQL Server Browser* e clique em "inciar"
->Talvez a opção "iniciar" não esteja disponível, nesse caso, com o botão direito vá em "propriedades" entre na aba "serviço" e na caixa "modo inicial" selecione a opção "Automático"
-3. Após realizar todas as alterações, ainda na opção "*SQL Server Services*" do menu lateral, reinicie o serviço do banco
-    ![](./images/SERVER_SERVICE.png "PORTAS TCP HABILITADAS")
+
+1. Navegue até `SQL Server Services`  
+2. Com o botão direito clique em *SQL Server Browser* > "Iniciar"  
+   - Se indisponível: Propriedades > aba *Serviço* > "Modo inicial": *Automático*  
+3. Reinicie o serviço principal do SQL Server  
+  - ![](./images/SERVER_SERVICE.png "PORTAS TCP HABILITADAS")
 
 
-## Criação das tabelas
-Por fim será necessario criar as tabelas através de um comando conforme a seguir:
+### 🔧 Criação das Tabelas (MSSQL)
 
-1. Abra um cmd no diretorio raiz dos arquivos
-2. Execute o comando `npx sequelize-cli db:migrate`
-	![](./images/CREATE_TABLES.png "PORTAS TCP HABILITADAS")
+1. Abra o terminal na raiz do projeto  
+2. Execute:
 
-# INSTALAÇÃO DO PORTAL
+```bash
+npx sequelize-cli db:migrate
+```
 
-- Esse Portal tem como intuito exibir os gráficos com execuções que ocorrerão nos ciclos.
-- [Clique aqui e baixe o arquivo zip](https://github.com/totvs/tir/raw/refs/heads/main/dashboard/servicelog-front.zip).
+---
 
-!!! aviso
-    Após baixar o pacote com o portal deve ser selecionado um servidor web de sua preferência para colocar seu portal, como recomendação neste exemplo usaremos o Nginx, mas fique a vontade para selecionar o que esteja mais acostumado.
+## 🔼 Instalação do Portal Web
 
-## Instalação e configuração do Nginx:
-Entre na página [Nginx](http://nginx.org/en/download.html) e na parte de download e selecione o pacote conforme seu sistema operacional.
-Após isso deve seguir os seguintes passos:
+O portal exibe gráficos de execuções dos ciclos de forma gerencial.
 
-1.   Descompactar o nginx no caminho desejado.
-2.   Abrir o arquivo "conf/nginx.conf"
-3.   Dentro da chave `server` inclua trecho a seguir:
+1. Baixe o portal: [servicelog-front.zip](https://github.com/totvs/tir/raw/refs/heads/main/dashboard/servicelog-front.zip)
+2. Escolha um servidor web. Recomendamos o **Nginx**.
 
-        listen       8066;
-        server_name  localhost;
+### Nginx: Instalação e Configuração
+
+1. Baixe: [Nginx Downloads](http://nginx.org/en/download.html)  
+2. Extraia em uma pasta  
+3. No arquivo `conf/nginx.conf`, edite:
+4. Inclua na chave `server` o trecho a seguir:
+```
+    listen       8066;
+    server_name  localhost;
+```
 
 4.   Faça o mesmo para a chave `location / ` com o código abaixo:
-
+```
         root   html;
         index  index.html index.htm;
         try_files $uri $uri/ /index.html;
+```
+  >A alteração deve ficar semelhante ao trecho abaixo:
+  ![](./images/NGINX_CONFIG.png)
 
-    >Sua alteração ficará algo semelhante ao seguinte:
-    ![](./images/NGINX_CONFIG.png)
+5. Copie todo conteudo de `/servicelog-front` para a pasta `nginx-x.x.x/html`
+6. Execute `nginx.exe` na pasta raiz
 
-5. Copie os arquivos do portal para a pasta /html
+> ⚠️ Certifique-se de que a `APP_PORT` no `.env` e no `html/assets/config/appConfig.json` estejam iguais
 
-6. Por fim na pasta raiz do nginx e execute o `nginx.exe`
-
-## Veja um exemplo a seguir:
+- Abaixo um exemplo animado do processo:
 ![](./gifs/instalacao.gif)
 
->## Observações
-A porta do web server deve ser a mesma `APP_PORT` configurada arquivo .env.
-Nesse caso fica no arquivo html/config/appConfig.json
+---
 
+### Nginx como Serviço do Windows (opcional)
 
+1. Acesse `/servicelog-api-build/scripts-bats/nginx/`  
+2. Execute `Install-service-server.bat` com permissões de **administrador**
+3. Configure os campos `Path` e `Startup directory`
+    - Path :  Ex. `Path/nginx.exe`
+    - Startup directory :  Ex. `Path/to/nginx`
+4. Clique em "Install service"
+5. Execute o arquivo `Run-service-server.bat`
 
-## Nginx como serviço do windows
-Para definir o nginx como um serviço do windows siga o seguinte procedimento:
+---
 
-1.  Na raiz do projeto vá até o diretório "/scripts-bats/nginx/"
-2.  Execute o `Install-service-server.bat` **em modo admnistrador**.
-3.  No campo "Path" defina o executavel do nginx e no campo "Startup directory" defina o local onde se encontra o executavel.    
-![](./images/nginx_nssm_gui.png)
-4.  Clique em "install service" e aguarde finalizar.
-5.  Pronto agora o que serviço ja está instalado é só roda-lo com `Run-service-server.bat`
+Pronto! Seu serviço de logs e o portal estão configurados e prontos para uso.
