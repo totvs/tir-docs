@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../images/icon-128.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.13">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.2.7">
     
     
       
@@ -24,10 +24,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.046329b4.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
       
       
 
@@ -46,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,13 +64,14 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="light-blue">
   
     
+    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
         
-        <a href="#servico" class="md-skip">
+        <a href="#guia-de-instalacao-e-configuracao-da-dashboard-de-logs" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -93,7 +94,7 @@
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -116,35 +117,32 @@
     
     
     
-    
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Pesquisar">
         
         <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+      <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Inicializando a pesquisa
@@ -155,7 +153,6 @@
     </div>
   </div>
 </div>
-      
     
     
   </nav>
@@ -198,15 +195,12 @@
   
   
   
-  
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Bem vindo ao Test Interface Robot
-    
   </span>
   
 
@@ -220,9 +214,6 @@
   
   
   
-  
-    
-    
     
     
     
@@ -230,16 +221,15 @@
       
         
         
+        
+        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
-          
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
-  
   <span class="md-ellipsis">
     Processo de Teste
-    
   </span>
   
 
@@ -258,15 +248,12 @@
   
   
   
-  
     <li class="md-nav__item">
       <a href="../../testes/Introdu%C3%A7%C3%A3oaTestedeSoftware/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Introdução a Testes
-    
   </span>
   
 
@@ -288,9 +275,6 @@
   
   
   
-  
-    
-    
     
     
     
@@ -298,16 +282,15 @@
       
         
         
+        
+        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
-          
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
-  
   <span class="md-ellipsis">
     TIR
-    
   </span>
   
 
@@ -326,15 +309,12 @@
   
   
   
-  
     <li class="md-nav__item">
       <a href="../../TIR/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Introdução
-    
   </span>
   
 
@@ -346,7 +326,6 @@
             
               
                 
-  
   
   
   
@@ -354,10 +333,8 @@
       <a href="../../tir-framework/FirstSteps/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Primeiros Passos
-    
   </span>
   
 
@@ -372,15 +349,12 @@
   
   
   
-  
     <li class="md-nav__item">
       <a href="../../tir-framework/ExecDocker/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Execução via Docker
-    
   </span>
   
 
@@ -402,9 +376,6 @@
   
   
   
-  
-    
-    
     
     
     
@@ -412,16 +383,15 @@
       
         
         
+        
+        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
-          
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
-  
   <span class="md-ellipsis">
     TIR Record
-    
   </span>
   
 
@@ -440,15 +410,12 @@
   
   
   
-  
     <li class="md-nav__item">
       <a href="../../tir-record/introducaoTirRecord/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Introdução
-    
   </span>
   
 
@@ -460,7 +427,6 @@
             
               
                 
-  
   
   
   
@@ -468,10 +434,8 @@
       <a href="../../tir-record/ComoUsar/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Guia do usuário
-    
   </span>
   
 
@@ -486,15 +450,12 @@
   
   
   
-  
     <li class="md-nav__item">
       <a href="../../tir-record/faq/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     TIR Record FAQ
-    
   </span>
   
 
@@ -518,9 +479,6 @@
     
   
   
-  
-    
-    
     
     
     
@@ -528,16 +486,15 @@
       
         
         
+        
+        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
-          
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
-  
   <span class="md-ellipsis">
     Dashboard de Testes
-    
   </span>
   
 
@@ -556,15 +513,12 @@
   
   
   
-  
     <li class="md-nav__item">
       <a href="../" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Introdução
-    
   </span>
   
 
@@ -581,7 +535,6 @@
     
   
   
-  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
@@ -593,10 +546,8 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
-  
   <span class="md-ellipsis">
     Instalação
-    
   </span>
   
 
@@ -606,10 +557,8 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
-  
   <span class="md-ellipsis">
     Instalação
-    
   </span>
   
 
@@ -631,29 +580,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configuracao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuração
-    </span>
+  <a href="#servico" class="md-nav__link">
+    Serviço
   </a>
   
-    <nav class="md-nav" aria-label="Configuração">
+    <nav class="md-nav" aria-label="Serviço">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#campos-permitidos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Campos permitidos
-    </span>
+  <a href="#instalacao" class="md-nav__link">
+    ✨ Instalação
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#valores-permitidos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Valores permitidos
-    </span>
+  <a href="#configuracao-do-arquivo-env" class="md-nav__link">
+    ⚙️ Configuração do Arquivo .env
+  </a>
+  
+    <nav class="md-nav" aria-label="⚙️ Configuração do Arquivo .env">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#banco-de-dados-db" class="md-nav__link">
+    Banco de Dados (DB)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caminhos-de-arquivos" class="md-nav__link">
+    Caminhos de Arquivos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#porta-da-aplicacao" class="md-nav__link">
+    Porta da Aplicação
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agendamento" class="md-nav__link">
+    Agendamento
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inicializacao" class="md-nav__link">
+    🚀 Inicialização
   </a>
   
 </li>
@@ -664,38 +648,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#instalacao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Instalação
-    </span>
+  <a href="#i-procedimento-para-microsoft-sql-server" class="md-nav__link">
+    ℹ️ Procedimento para Microsoft SQL Server
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#observacoes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Observações
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Observações">
+    <nav class="md-nav" aria-label="ℹ️ Procedimento para Microsoft SQL Server">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#habilitar-portas-tcp-do-banco" class="md-nav__link">
-    <span class="md-ellipsis">
-      Habilitar portas TCP do Banco
-    </span>
+  <a href="#habilitar-tcpip" class="md-nav__link">
+    Habilitar TCP/IP
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#habilitar-servico-sql-server-browser" class="md-nav__link">
-    <span class="md-ellipsis">
-      Habilitar serviço SQL Server Browser
-    </span>
+    Habilitar serviço SQL Server Browser
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criacao-das-tabelas-mssql" class="md-nav__link">
+    🔧 Criação das Tabelas (MSSQL)
   </a>
   
 </li>
@@ -706,11 +682,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#criacao-das-tabelas" class="md-nav__link">
-    <span class="md-ellipsis">
-      Criação das tabelas
-    </span>
+  <a href="#instalacao-do-portal-web" class="md-nav__link">
+    🔼 Instalação do Portal Web
   </a>
+  
+    <nav class="md-nav" aria-label="🔼 Instalação do Portal Web">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nginx-instalacao-e-configuracao" class="md-nav__link">
+    Nginx: Instalação e Configuração
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nginx-como-servico-do-windows-opcional" class="md-nav__link">
+    Nginx como Serviço do Windows (opcional)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -728,15 +722,12 @@
   
   
   
-  
     <li class="md-nav__item">
       <a href="../docker/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Instalação via Docker
-    
   </span>
   
 
@@ -748,7 +739,6 @@
             
               
                 
-  
   
   
   
@@ -756,10 +746,8 @@
       <a href="../configurandoTIR/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Configuração do TIR
-    
   </span>
   
 
@@ -774,15 +762,12 @@
   
   
   
-  
     <li class="md-nav__item">
       <a href="../ComoUsar/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     Guia do usuário
-    
   </span>
   
 
@@ -804,15 +789,12 @@
   
   
   
-  
     <li class="md-nav__item">
       <a href="../../faqGeral/" class="md-nav__link">
         
   
-  
   <span class="md-ellipsis">
     FAQ
-    
   </span>
   
 
@@ -848,29 +830,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configuracao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuração
-    </span>
+  <a href="#servico" class="md-nav__link">
+    Serviço
   </a>
   
-    <nav class="md-nav" aria-label="Configuração">
+    <nav class="md-nav" aria-label="Serviço">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#campos-permitidos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Campos permitidos
-    </span>
+  <a href="#instalacao" class="md-nav__link">
+    ✨ Instalação
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#valores-permitidos" class="md-nav__link">
-    <span class="md-ellipsis">
-      Valores permitidos
-    </span>
+  <a href="#configuracao-do-arquivo-env" class="md-nav__link">
+    ⚙️ Configuração do Arquivo .env
+  </a>
+  
+    <nav class="md-nav" aria-label="⚙️ Configuração do Arquivo .env">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#banco-de-dados-db" class="md-nav__link">
+    Banco de Dados (DB)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caminhos-de-arquivos" class="md-nav__link">
+    Caminhos de Arquivos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#porta-da-aplicacao" class="md-nav__link">
+    Porta da Aplicação
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agendamento" class="md-nav__link">
+    Agendamento
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inicializacao" class="md-nav__link">
+    🚀 Inicialização
   </a>
   
 </li>
@@ -881,38 +898,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#instalacao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Instalação
-    </span>
+  <a href="#i-procedimento-para-microsoft-sql-server" class="md-nav__link">
+    ℹ️ Procedimento para Microsoft SQL Server
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#observacoes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Observações
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Observações">
+    <nav class="md-nav" aria-label="ℹ️ Procedimento para Microsoft SQL Server">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#habilitar-portas-tcp-do-banco" class="md-nav__link">
-    <span class="md-ellipsis">
-      Habilitar portas TCP do Banco
-    </span>
+  <a href="#habilitar-tcpip" class="md-nav__link">
+    Habilitar TCP/IP
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#habilitar-servico-sql-server-browser" class="md-nav__link">
-    <span class="md-ellipsis">
-      Habilitar serviço SQL Server Browser
-    </span>
+    Habilitar serviço SQL Server Browser
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criacao-das-tabelas-mssql" class="md-nav__link">
+    🔧 Criação das Tabelas (MSSQL)
   </a>
   
 </li>
@@ -923,11 +932,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#criacao-das-tabelas" class="md-nav__link">
-    <span class="md-ellipsis">
-      Criação das tabelas
-    </span>
+  <a href="#instalacao-do-portal-web" class="md-nav__link">
+    🔼 Instalação do Portal Web
   </a>
+  
+    <nav class="md-nav" aria-label="🔼 Instalação do Portal Web">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nginx-instalacao-e-configuracao" class="md-nav__link">
+    Nginx: Instalação e Configuração
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nginx-como-servico-do-windows-opcional" class="md-nav__link">
+    Nginx como Serviço do Windows (opcional)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -946,191 +973,150 @@
                   
 
 
-
-<h1 id="servico">Serviço</h1>
-<p>Serviço utilizado para gravação e consulta dos logs dos testes realizados pelo TIR.</p>
-<p>O pacote servicelog necessita do pacote do <a href="https://nodejs.org/">Node.js</a> versão v12+.</p>
-<h2 id="configuracao">Configuração</h2>
-<p><a href="https://github.com/totvs/tir/raw/refs/heads/main/dashboard/servicelog-api-build.zip">Clique aqui e baixe o arquivo zip</a>.
-Após a instalação procurar na pasta raiz do projeto o arquivo <code>.env</code> e realizar a configuração do serviço conforme os parâmetros abaixo.</p>
-<ul>
-<li>
-<p><strong>database</strong> - A Tag "DB" é responsavél pela comunicação do banco e possui os seguintes parâmetros:</p>
-<ul>
-<li><strong>TYPE</strong> - Tipo de banco de dados que serão armazenados os logs de execuções, podendo receber como parâmetros <code>mssql</code> para Microsoft SQL ou <code>sqlite</code> para SQLITE.</li>
-<li><strong>STORAGE</strong> - Apenas caso a opção de banco seja SQLITE. Representa o caminho do banco que por default fica na pasta "db" do projeto: <code>./db/dashboard.sqlite</code>.</li>
-<li><strong>INSTANCENAME</strong> - Nome da Instância do banco de dados.</li>
-<li><strong>HOST</strong> - Ip do servidor que está o banco de dados.</li>
-<li><strong>USERNAME</strong> - Usuário do banco de dados.</li>
-<li><strong>PASSWORD</strong> - Senha do usuário do banco de dados.</li>
-<li><strong>DATABASE</strong> - Nome do banco de dados criado para receber os registros.</li>
-</ul>
-</li>
-<li>
-<p><strong>PATH_SERVER</strong> - Caminho da pasta onde seram enviados os arquivos json caso o servidor não consiga gravar o registro no banco de dados.</p>
-</li>
-<li>
-<p><strong>PATH_PROCESSED</strong> - Pasta de arquivos que já foram processados quando o servidor apresentar uma contigência.</p>
-</li>
-<li>
-<p><strong>APP_PORT</strong> - Porta que será inicializado a aplicação.</p>
-</li>
-<li>
-<p><strong>SCHEDULE</strong> - Nessa opção é configurado qual será frequência de verificação de arquivos jsons da pasta configurada no "pathServer". 
-Ela possui uma sintaxe abaixa</p>
-</li>
-</ul>
-<h4 id="campos-permitidos">Campos permitidos</h4>
-<div class="highlight"><pre><span></span><code> # ┌────────────── segundos (optional)
- # │ ┌──────────── minutos
- # │ │ ┌────────── horas
- # │ │ │ ┌──────── dias do mês
- # │ │ │ │ ┌────── mês
- # │ │ │ │ │ ┌──── dia da semana
- # │ │ │ │ │ │
- # │ │ │ │ │ │
- # * * * * * *
-</code></pre></div>
-<h3 id="valores-permitidos">Valores permitidos</h3>
-<table>
-<thead>
-<tr>
-<th>campos</th>
-<th>valores permitidos</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>segundos</td>
-<td>0-59</td>
-</tr>
-<tr>
-<td>minutos</td>
-<td>0-59</td>
-</tr>
-<tr>
-<td>hora</td>
-<td>0-23</td>
-</tr>
-<tr>
-<td>dia do mês</td>
-<td>1-31</td>
-</tr>
-<tr>
-<td>mês</td>
-<td>1-12 (or names)</td>
-</tr>
-<tr>
-<td>dia da semana</td>
-<td>0-7 (nomes ou números, 0 ou 7 domingo à sábado)</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>No padrão está da seguinte forma:
-    <code>* 7,12,18,23 * * *</code> - Dessa forma será executado o serviço as 7hrs, 12hrs, 18hrs e 23hrs todos os dias.</li>
-</ul>
-<h2 id="instalacao">Instalação</h2>
-<p>Após a instalação procurar na raiz do projeto a pasta /scripts-bats e executar os scripts na sequência abaixo e em modo de administrador.</p>
-<ol>
-<li>install.bat - Descompactar os pacotes do npm.</li>
-<li>service-mode.bat - Instalação a api em modo de serviço.</li>
-<li>run.bat - Inicializa o serviço.</li>
-</ol>
-<p>Em caso de necessidade poderá desligar o serviço com o bat abaixo.</p>
-<ul>
-<li>stop.bat - Desliga o serviço</li>
-</ul>
-<h2 id="observacoes">Observações</h2>
+<h1 id="guia-de-instalacao-e-configuracao-da-dashboard-de-logs">Guia de Instalação e Configuração da Dashboard de Logs</h1>
+<h2 id="servico">Serviço</h2>
+<p>Este serviço é utilizado para gravação e consulta dos logs dos testes realizados pelo TIR.</p>
 <blockquote>
-<p>Caso utilize o <strong>Microsoft SQL Server</strong> será necessario habilitar a comunicação TCP e ativar o SQL Server Browser (responsável por escutar as solicitações de entrada de recursos do Microsoft SQL Server e fornecer informações sobre as instâncias do SQL Server instaladas no computador) conforme o passo a passo a seguir:</p>
+<p>Requisito: Node.js v12+ <a href="https://nodejs.org/">Baixe aqui</a></p>
 </blockquote>
-<h3 id="habilitar-portas-tcp-do-banco">Habilitar portas TCP do Banco</h3>
+<hr />
+<h3 id="instalacao">✨ Instalação</h3>
 <ol>
-<li>Pressione <em>Windows key + R</em></li>
-<li>Na caixa de dialogo digite <em>Digite compmgmt.msc</em></li>
-<li>Navegue por "<em>Serviços e aplicativos &gt; SQL Server Configuration Manager &gt; SQL Server Network Configuration</em>" e selecione a mesma instancia do banco informado no arquivo <code>.env</code></li>
-<li>Após selecionada a instância, no menu a direita clique com o botão direito sob o protocolo e habilite <strong>faça isso para todas as opções</strong>:
-    <img alt="" src="../images/MC_TCP.png" title="PORTAS TCP HABILITADAS" /></li>
+<li>Baixe o pacote: <a href="https://github.com/totvs/tir/raw/refs/heads/main/dashboard/servicelog-api-build.zip">servicelog-api-build.zip</a></li>
+<li>Extraia e abra a pasta do projeto</li>
+<li>Configure o arquivo <code>.env</code> conforme instruções abaixo</li>
+</ol>
+<hr />
+<h3 id="configuracao-do-arquivo-env">⚙️ Configuração do Arquivo <code>.env</code></h3>
+<h4 id="banco-de-dados-db">Banco de Dados (<code>DB</code>)</h4>
+<ul>
+<li><code>TYPE</code>: modelo de banco onde sera <code>mssql</code> ou <code>sqlite</code></li>
+<li><code>STORAGE</code>: Caminho para o arquivo do banco de dados. Por padrão, o arquivo é salvo em ./db/dashboard.sqlite. (apenas para sqlite) </li>
+<li>Para MSSQL:<ul>
+<li><code>INSTANCENAME</code>: Nome da instância do SQL Server (apenas mssql).</li>
+<li><code>HOST</code>: Endereço IP ou hostname do servidor onde o banco está hospedado.</li>
+<li><code>USERNAME</code>: Nome de usuário com permissões de acesso ao banco.</li>
+<li><code>PASSWORD</code>:Senha do usuário do banco.</li>
+<li><code>DATABASE</code>: Nome do banco de dados onde os registros serão armazenados.</li>
+</ul>
+</li>
+</ul>
+<h4 id="caminhos-de-arquivos">Caminhos de Arquivos</h4>
+<ul>
+<li><code>PATH_SERVER</code>: Diretório onde serão salvos arquivos JSONs em caso de falha na gravação no banco.</li>
+<li><code>PATH_PROCESSED</code>: Diretório onde os arquivos JSONs serão movidos após terem sido processados com sucesso, especialmente em cenários de recuperação.</li>
+</ul>
+<h4 id="porta-da-aplicacao">Porta da Aplicação</h4>
+<ul>
+<li><code>APP_PORT</code>: Porta de inicialização do serviço (ex: 3333)</li>
+</ul>
+<h4 id="agendamento">Agendamento</h4>
+<ul>
+<li>
+<p><code>SCHEDULE</code>: Define a frequência de verificação de arquivos jsons da pasta configurada no "pathServer".</p>
+</li>
+<li>
+<p>Utiliza a sintaxe padrão de agendamento cron. <strong>Default</strong>:
+  <div class="highlight"><pre><span></span><code> * 7,12,18,23 * * *
+</code></pre></div>
+  Executa às 7h, 12h, 18h e 23h diariamente.</p>
+</li>
+</ul>
+<blockquote>
+<p>Valores válidos: segundos (0-59), minutos (0-59), horas (0-23), dia do mês (1-31), mês (1-12), dia da semana (0-7)</p>
+</blockquote>
+<hr />
+<h3 id="inicializacao">🚀 Inicialização</h3>
+<p>No diretório <code>/scripts-bats</code>, execute os scripts abaixo como <strong>administrador</strong>:</p>
+<ol>
+<li><code>install.bat</code> - Instala dependências via npm  </li>
+<li><code>service-mode.bat</code> - Instala a API como serviço  </li>
+<li><code>run.bat</code> - Inicia o serviço  </li>
+</ol>
+<p>Para parar:</p>
+<ul>
+<li><code>stop.bat</code></li>
+</ul>
+<hr />
+<h2 id="i-procedimento-para-microsoft-sql-server">ℹ️ Procedimento para Microsoft SQL Server</h2>
+<h3 id="habilitar-tcpip">Habilitar TCP/IP</h3>
+<ol>
+<li>Pressione <code>Win + R</code> &gt; digite <code>compmgmt.msc</code></li>
+<li>Navegue até: <code>Serviços e aplicativos &gt; SQL Server Configuration Manager &gt; SQL Server Network Configuration</code>  </li>
+<li>Selecione a instância correta (mesma informada no .env) e habilite os protocolos TCP no menu exibido.</li>
+<li><img alt="" src="../images/MC_TCP.png" title="PORTAS TCP HABILITADAS" /></li>
 </ol>
 <h3 id="habilitar-servico-sql-server-browser">Habilitar serviço SQL Server Browser</h3>
 <ol>
-<li>Dentro do menu lateral "<em>SQL Server Configuration Manager</em>" selecione a opção "<em>SQL Server Services</em>"</li>
-<li>No menu a direita clique com o botão direito sob a opção <em>SQL Server Browser</em> e clique em "inciar"<blockquote>
-<p>Talvez a opção "iniciar" não esteja disponível, nesse caso, com o botão direito vá em "propriedades" entre na aba "serviço" e na caixa "modo inicial" selecione a opção "Automático"</p>
+<li>Navegue até <code>SQL Server Services</code>  </li>
+<li>Com o botão direito clique em <em>SQL Server Browser</em> &gt; "Iniciar"  </li>
+<li>Se indisponível: Propriedades &gt; aba <em>Serviço</em> &gt; "Modo inicial": <em>Automático</em>  </li>
+<li>Reinicie o serviço principal do SQL Server  </li>
+<li><img alt="" src="../images/SERVER_SERVICE.png" title="PORTAS TCP HABILITADAS" /></li>
+</ol>
+<h3 id="criacao-das-tabelas-mssql">🔧 Criação das Tabelas (MSSQL)</h3>
+<ol>
+<li>Abra o terminal na raiz do projeto  </li>
+<li>Execute:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>npx<span class="w"> </span>sequelize-cli<span class="w"> </span>db:migrate
+</code></pre></div>
+<hr />
+<h2 id="instalacao-do-portal-web">🔼 Instalação do Portal Web</h2>
+<p>O portal exibe gráficos de execuções dos ciclos de forma gerencial.</p>
+<ol>
+<li>Baixe o portal: <a href="https://github.com/totvs/tir/raw/refs/heads/main/dashboard/servicelog-front.zip">servicelog-front.zip</a></li>
+<li>Escolha um servidor web. Recomendamos o <strong>Nginx</strong>.</li>
+</ol>
+<h3 id="nginx-instalacao-e-configuracao">Nginx: Instalação e Configuração</h3>
+<ol>
+<li>Baixe: <a href="http://nginx.org/en/download.html">Nginx Downloads</a>  </li>
+<li>Extraia em uma pasta  </li>
+<li>No arquivo <code>conf/nginx.conf</code>, edite:</li>
+<li>
+<p>Inclua na chave <code>server</code> o trecho a seguir:
+<div class="highlight"><pre><span></span><code>    listen       8066;
+    server_name  localhost;
+</code></pre></div></p>
+</li>
+<li>
+<p>Faça o mesmo para a chave <code>location /</code> com o código abaixo:
+<div class="highlight"><pre><span></span><code>        root   html;
+        index  index.html index.htm;
+        try_files $uri $uri/ /index.html;
+</code></pre></div></p>
+<blockquote>
+<p>A alteração deve ficar semelhante ao trecho abaixo:
+  <img alt="" src="../images/NGINX_CONFIG.png" /></p>
 </blockquote>
 </li>
-<li>Após realizar todas as alterações, ainda na opção "<em>SQL Server Services</em>" do menu lateral, reinicie o serviço do banco
-    <img alt="" src="../images/SERVER_SERVICE.png" title="PORTAS TCP HABILITADAS" /></li>
+<li>
+<p>Copie todo conteudo de <code>/servicelog-front</code> para a pasta <code>nginx-x.x.x/html</code></p>
+</li>
+<li>Execute <code>nginx.exe</code> na pasta raiz</li>
 </ol>
-<h2 id="criacao-das-tabelas">Criação das tabelas</h2>
-<p>Por fim será necessario criar as tabelas através de um comando conforme a seguir:</p>
-<ol>
-<li>Abra um cmd no diretorio raiz dos arquivos</li>
-<li>Execute o comando <code>npx sequelize-cli db:migrate</code>
-    <img alt="" src="../images/CREATE_TABLES.png" title="PORTAS TCP HABILITADAS" /></li>
-</ol>
-<h1 id="instalacao-do-portal">INSTALAÇÃO DO PORTAL</h1>
+<blockquote>
+<p>⚠️ Certifique-se de que a <code>APP_PORT</code> no <code>.env</code> e no <code>html/assets/config/appConfig.json</code> estejam iguais</p>
+</blockquote>
 <ul>
-<li>Esse Portal tem como intuito exibir os gráficos com execuções que ocorrerão nos ciclos.</li>
-<li><a href="https://github.com/totvs/tir/raw/refs/heads/main/dashboard/servicelog-front.zip">Clique aqui e baixe o arquivo zip</a>.</li>
+<li>Abaixo um exemplo animado do processo:
+<img alt="" src="../gifs/instalacao.gif" /></li>
 </ul>
-<p>!!! aviso
-    Após baixar o pacote com o portal deve ser selecionado um servidor web de sua preferência para colocar seu portal, como recomendação neste exemplo usaremos o Nginx, mas fique a vontade para selecionar o que esteja mais acostumado.</p>
-<h2 id="instalacao-e-configuracao-do-nginx">Instalação e configuração do Nginx:</h2>
-<p>Entre na página <a href="http://nginx.org/en/download.html">Nginx</a> e na parte de download e selecione o pacote conforme seu sistema operacional.
-Após isso deve seguir os seguintes passos:</p>
+<hr />
+<h3 id="nginx-como-servico-do-windows-opcional">Nginx como Serviço do Windows (opcional)</h3>
 <ol>
-<li>Descompactar o nginx no caminho desejado.</li>
-<li>Abrir o arquivo "conf/nginx.conf"</li>
-<li>
-<p>Dentro da chave <code>server</code> inclua trecho a seguir:</p>
-<pre><code>listen       8066;
-server_name  localhost;
-</code></pre>
+<li>Acesse <code>/servicelog-api-build/scripts-bats/nginx/</code>  </li>
+<li>Execute <code>Install-service-server.bat</code> com permissões de <strong>administrador</strong></li>
+<li>Configure os campos <code>Path</code> e <code>Startup directory</code><ul>
+<li>Path :  Ex. <code>Path/nginx.exe</code></li>
+<li>Startup directory :  Ex. <code>Path/to/nginx</code></li>
+</ul>
 </li>
-<li>
-<p>Faça o mesmo para a chave <code>location /</code> com o código abaixo:</p>
-<pre><code>root   html;
-index  index.html index.htm;
-try_files $uri $uri/ /index.html;
-</code></pre>
-<blockquote>
-<p>Sua alteração ficará algo semelhante ao seguinte:
-<img alt="" src="../images/NGINX_CONFIG.png" /></p>
-</blockquote>
-</li>
-<li>
-<p>Copie os arquivos do portal para a pasta /html</p>
-</li>
-<li>
-<p>Por fim na pasta raiz do nginx e execute o <code>nginx.exe</code></p>
-</li>
+<li>Clique em "Install service"</li>
+<li>Execute o arquivo <code>Run-service-server.bat</code></li>
 </ol>
-<h2 id="veja-um-exemplo-a-seguir">Veja um exemplo a seguir:</h2>
-<p><img alt="" src="../gifs/instalacao.gif" /></p>
-<blockquote>
-<h2 id="observacoes_1">Observações</h2>
-<p>A porta do web server deve ser a mesma <code>APP_PORT</code> configurada arquivo .env.
-Nesse caso fica no arquivo html/config/appConfig.json</p>
-</blockquote>
-<h2 id="nginx-como-servico-do-windows">Nginx como serviço do windows</h2>
-<p>Para definir o nginx como um serviço do windows siga o seguinte procedimento:</p>
-<ol>
-<li>Na raiz do projeto vá até o diretório "/scripts-bats/nginx/"</li>
-<li>Execute o <code>Install-service-server.bat</code> <strong>em modo admnistrador</strong>.</li>
-<li>No campo "Path" defina o executavel do nginx e no campo "Startup directory" defina o local onde se encontra o executavel.  <br />
-<img alt="" src="../images/nginx_nssm_gui.png" /></li>
-<li>Clique em "install service" e aguarde finalizar.</li>
-<li>Pronto agora o que serviço ja está instalado é só roda-lo com <code>Run-service-server.bat</code></li>
-</ol>
-
-
-
-
-
-
-
+<hr />
+<p>Pronto! Seu serviço de logs e o portal estão configurados e prontos para uso.</p>
 
 
 
@@ -1141,7 +1127,6 @@ Nesse caso fica no arquivo html/config/appConfig.json</p>
             </div>
           
           
-<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
       </main>
@@ -1169,13 +1154,10 @@ Nesse caso fica no arquivo html/config/appConfig.json</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
     
     
-      
-      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
-    
-    
-      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
       
     
   </body>
