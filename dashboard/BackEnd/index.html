@@ -1043,24 +1043,33 @@
 <ol>
 <li>Pressione <code>Win + R</code> &gt; digite <code>compmgmt.msc</code></li>
 <li>Navegue até: <code>Serviços e aplicativos &gt; SQL Server Configuration Manager &gt; SQL Server Network Configuration</code>  </li>
-<li>Selecione a instância correta (mesma informada no .env) e habilite os protocolos TCP no menu exibido.</li>
+<li>Selecione a instância correta (mesma informada no .env) e habilite os protocolos TCP no menu exibido.<ul>
 <li><img alt="" src="../images/MC_TCP.png" title="PORTAS TCP HABILITADAS" /></li>
+</ul>
+</li>
 </ol>
 <h3 id="habilitar-servico-sql-server-browser">Habilitar serviço SQL Server Browser</h3>
 <ol>
 <li>Navegue até <code>SQL Server Services</code>  </li>
-<li>Com o botão direito clique em <em>SQL Server Browser</em> &gt; "Iniciar"  </li>
+<li>Com o botão direito clique em <em>SQL Server Browser</em> &gt; "Iniciar"  <ul>
 <li>Se indisponível: Propriedades &gt; aba <em>Serviço</em> &gt; "Modo inicial": <em>Automático</em>  </li>
-<li>Reinicie o serviço principal do SQL Server  </li>
+</ul>
+</li>
+<li>Reinicie o serviço principal do SQL Server  <ul>
 <li><img alt="" src="../images/SERVER_SERVICE.png" title="PORTAS TCP HABILITADAS" /></li>
+</ul>
+</li>
 </ol>
 <h3 id="criacao-das-tabelas-mssql">🔧 Criação das Tabelas (MSSQL)</h3>
 <ol>
 <li>Abra o terminal na raiz do projeto  </li>
-<li>Execute:</li>
-</ol>
+<li>Execute:
 <div class="highlight"><pre><span></span><code>npx<span class="w"> </span>sequelize-cli<span class="w"> </span>db:migrate
-</code></pre></div>
+</code></pre></div><ul>
+<li><img alt="" src="../images/CREATE_TABLES.png" title="CRIACAO DAS TABELAS" /></li>
+</ul>
+</li>
+</ol>
 <hr />
 <h2 id="instalacao-do-portal-web">🔼 Instalação do Portal Web</h2>
 <p>O portal exibe gráficos de execuções dos ciclos de forma gerencial.</p>
