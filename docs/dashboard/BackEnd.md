@@ -88,7 +88,7 @@ Para parar:
 
 ### 🔧 Criação das Tabelas (MSSQL)
 
-1. Abra o terminal na raiz do projeto  
+1. Abra o terminal em `/servicelog-api-build`, raiz do projeto:
 2. Execute:
 ```bash
 npx sequelize-cli db:migrate
