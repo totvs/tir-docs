@@ -117,9 +117,9 @@ O portal exibe gráficos de execuções dos ciclos de forma gerencial.
 
 4.   Faça o mesmo para a chave `location / ` com o código abaixo:
 ```
-        root   html;
-        index  index.html index.htm;
-        try_files $uri $uri/ /index.html;
+          root   html;
+          index  index.html index.htm;
+          try_files $uri $uri/ /index.html;
 ```
   >A alteração deve ficar semelhante ao trecho abaixo:
   ![](./images/NGINX_CONFIG.png)
