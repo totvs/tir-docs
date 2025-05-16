@@ -74,26 +74,26 @@ Para parar:
 1. Pressione `Win + R` > digite `compmgmt.msc`
 2. Navegue até: `Serviços e aplicativos > SQL Server Configuration Manager > SQL Server Network Configuration`  
 3. Selecione a instância correta (mesma informada no .env) e habilite os protocolos TCP no menu exibido.
-  - ![](./images/MC_TCP.png "PORTAS TCP HABILITADAS")
+    - ![](./images/MC_TCP.png "PORTAS TCP HABILITADAS")
 
 
 ### Habilitar serviço SQL Server Browser
 
 1. Navegue até `SQL Server Services`  
 2. Com o botão direito clique em *SQL Server Browser* > "Iniciar"  
-   - Se indisponível: Propriedades > aba *Serviço* > "Modo inicial": *Automático*  
+    - Se indisponível: Propriedades > aba *Serviço* > "Modo inicial": *Automático*  
 3. Reinicie o serviço principal do SQL Server  
-  - ![](./images/SERVER_SERVICE.png "PORTAS TCP HABILITADAS")
+    - ![](./images/SERVER_SERVICE.png "PORTAS TCP HABILITADAS")
 
 
 ### 🔧 Criação das Tabelas (MSSQL)
 
 1. Abra o terminal na raiz do projeto  
 2. Execute:
-
 ```bash
 npx sequelize-cli db:migrate
 ```
+    - ![](./images/CREATE_TABLES.png "CRIACAO DAS TABELAS")
 
 ---
 
