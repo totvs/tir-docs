@@ -1062,7 +1062,7 @@
 </ol>
 <h3 id="criacao-das-tabelas-mssql">🔧 Criação das Tabelas (MSSQL)</h3>
 <ol>
-<li>Abra o terminal na raiz do projeto  </li>
+<li>Abra o terminal em <code>/servicelog-api-build</code>, raiz do projeto:</li>
 <li>Execute:
 <div class="highlight"><pre><span></span><code>npx<span class="w"> </span>sequelize-cli<span class="w"> </span>db:migrate
 </code></pre></div><ul>
@@ -1090,9 +1090,9 @@
 </li>
 <li>
 <p>Faça o mesmo para a chave <code>location /</code> com o código abaixo:
-<div class="highlight"><pre><span></span><code>        root   html;
-        index  index.html index.htm;
-        try_files $uri $uri/ /index.html;
+<div class="highlight"><pre><span></span><code>          root   html;
+          index  index.html index.htm;
+          try_files $uri $uri/ /index.html;
 </code></pre></div></p>
 <blockquote>
 <p>A alteração deve ficar semelhante ao trecho abaixo:
