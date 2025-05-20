@@ -67,7 +67,7 @@ Para parar:
 
 ---
 
-## ℹ️ Procedimento para Microsoft SQL Server
+## ℹ️ Procedimento para Microsoft SQL Server (Opcional)
 
 ### Habilitar TCP/IP
 
