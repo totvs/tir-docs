@@ -16,6 +16,7 @@ nav:
       - 'Introdução': 'TIR.md'
       - 'Primeiros Passos': './tir-framework/FirstSteps.md'
       - 'Execução via Docker': './tir-framework/ExecDocker.md'
+      - 'Nova Home e Novo Browse (12.1.2610)': './tir-framework/NovaHomeNovoBrowse.md'
     - 'TIR Record':
       - 'Introdução': './tir-record/introducaoTirRecord.md'
       - 'Guia do usuário': './tir-record/ComoUsar.md'
