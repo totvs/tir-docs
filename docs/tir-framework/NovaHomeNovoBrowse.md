@@ -40,8 +40,7 @@ oHelper.SetLateralMenu("Atualizações > Cadastro > Produto")
 ```python
 oHelper.SetLateralMenu(
     "Atualizações > Cadastro > Produtos",
-    program_name="MATA410",
-    module="AGD"
+    program_name="Compras",
 )
 ```
 
@@ -53,9 +52,6 @@ oHelper.SetProgram("MATA010")
 
 # Selecionando o módulo pelo nome
 oHelper.SetProgram("MATA010", "Faturamento")
-
-# Selecionando o módulo pela sigla
-oHelper.SetProgram("MATA010", "SIGAFIN")
 ```
 
 **Dica prática**: use `SetLateralMenu` só quando o script realmente precisa validar a navegação pelo menu. Nos demais casos, `SetProgram` é mais simples e mais estável.
