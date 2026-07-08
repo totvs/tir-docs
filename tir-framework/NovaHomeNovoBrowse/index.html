@@ -1,0 +1,1248 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../ExecDocker/">
+      
+      
+        <link rel="next" href="../../tir-record/introducaoTirRecord/">
+      
+      
+      <link rel="icon" href="../../images/icon-128.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.2.7">
+    
+    
+      
+        <title>Nova Home e Novo Browse (12.1.2610) - TEST INTERFACE ROBOT</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.046329b4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="light-blue">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#nova-home-e-novo-browse-poui-guia-de-adaptacao" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="TEST INTERFACE ROBOT" class="md-header__button md-logo" aria-label="TEST INTERFACE ROBOT" data-md-component="logo">
+      
+  <img src="../../images/RoboCor.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TEST INTERFACE ROBOT
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Nova Home e Novo Browse (12.1.2610)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TEST INTERFACE ROBOT" class="md-nav__button md-logo" aria-label="TEST INTERFACE ROBOT" data-md-component="logo">
+      
+  <img src="../../images/RoboCor.png" alt="logo">
+
+    </a>
+    TEST INTERFACE ROBOT
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bem vindo ao Test Interface Robot
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Processo de Teste
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Processo de Teste
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../testes/Introdu%C3%A7%C3%A3oaTestedeSoftware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introdução a Testes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TIR
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            TIR
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TIR/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introdução
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FirstSteps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Primeiros Passos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ExecDocker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Execução via Docker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Nova Home e Novo Browse (12.1.2610)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Nova Home e Novo Browse (12.1.2610)
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nova-home" class="md-nav__link">
+    Nova Home
+  </a>
+  
+    <nav class="md-nav" aria-label="Nova Home">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-muda" class="md-nav__link">
+    O que muda
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#habilitando-a-nova-home-nos-testes" class="md-nav__link">
+    Habilitando a Nova Home nos testes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acessando-rotinas-setlateralmenu-x-setprogram" class="md-nav__link">
+    Acessando rotinas: SetLateralMenu x SetProgram
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#novo-browse-poui" class="md-nav__link">
+    Novo Browse (POUI)
+  </a>
+  
+    <nav class="md-nav" aria-label="Novo Browse (POUI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-saber-qual-browse-esta-sendo-usado" class="md-nav__link">
+    Como saber qual browse está sendo usado
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapeamento-automatico-de-botoes" class="md-nav__link">
+    Mapeamento automático de botões
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quando-o-script-precisa-de-ajuste-manual" class="md-nav__link">
+    Quando o script precisa de ajuste manual
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pesquisando-registros-de-searchbrowse-para-filterbrowse" class="md-nav__link">
+    Pesquisando registros: de SearchBrowse para FilterBrowse
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cenarios-especiais" class="md-nav__link">
+    Cenários especiais
+  </a>
+  
+    <nav class="md-nav" aria-label="Cenários especiais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comandos-exclusivos-de-releases-mais-novas" class="md-nav__link">
+    Comandos exclusivos de releases mais novas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotinas-smart-x" class="md-nav__link">
+    Rotinas "Smart X"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-se-eu-encontrar-um-caso-que-o-mapeamento-automatico-nao-resolve" class="md-nav__link">
+    E se eu encontrar um caso que o mapeamento automático não resolve?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist-rapido-de-migracao" class="md-nav__link">
+    Checklist rápido de migração
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    TIR Record
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            TIR Record
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tir-record/introducaoTirRecord/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introdução
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tir-record/ComoUsar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guia do usuário
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tir-record/faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TIR Record FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Dashboard de Testes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Dashboard de Testes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dashboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introdução
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dashboard/BackEnd/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalação
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dashboard/docker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalação via Docker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dashboard/configurandoTIR/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuração do TIR
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dashboard/ComoUsar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guia do usuário
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faqGeral/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nova-home" class="md-nav__link">
+    Nova Home
+  </a>
+  
+    <nav class="md-nav" aria-label="Nova Home">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-muda" class="md-nav__link">
+    O que muda
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#habilitando-a-nova-home-nos-testes" class="md-nav__link">
+    Habilitando a Nova Home nos testes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acessando-rotinas-setlateralmenu-x-setprogram" class="md-nav__link">
+    Acessando rotinas: SetLateralMenu x SetProgram
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#novo-browse-poui" class="md-nav__link">
+    Novo Browse (POUI)
+  </a>
+  
+    <nav class="md-nav" aria-label="Novo Browse (POUI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-saber-qual-browse-esta-sendo-usado" class="md-nav__link">
+    Como saber qual browse está sendo usado
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapeamento-automatico-de-botoes" class="md-nav__link">
+    Mapeamento automático de botões
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quando-o-script-precisa-de-ajuste-manual" class="md-nav__link">
+    Quando o script precisa de ajuste manual
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pesquisando-registros-de-searchbrowse-para-filterbrowse" class="md-nav__link">
+    Pesquisando registros: de SearchBrowse para FilterBrowse
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cenarios-especiais" class="md-nav__link">
+    Cenários especiais
+  </a>
+  
+    <nav class="md-nav" aria-label="Cenários especiais">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comandos-exclusivos-de-releases-mais-novas" class="md-nav__link">
+    Comandos exclusivos de releases mais novas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rotinas-smart-x" class="md-nav__link">
+    Rotinas "Smart X"
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-se-eu-encontrar-um-caso-que-o-mapeamento-automatico-nao-resolve" class="md-nav__link">
+    E se eu encontrar um caso que o mapeamento automático não resolve?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist-rapido-de-migracao" class="md-nav__link">
+    Checklist rápido de migração
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="nova-home-e-novo-browse-poui-guia-de-adaptacao">Nova Home e Novo Browse (POUI) — Guia de Adaptação</h1>
+<blockquote>
+<p>Válido a partir da release <strong>12.1.2610</strong>, mantendo compatibilidade com a <strong>12.1.2510</strong>.</p>
+</blockquote>
+<p>A partir dessa release, o Protheus passa a contar com duas novidades visuais e de navegação:</p>
+<ul>
+<li><strong>Nova Home</strong>: uma nova forma de acessar as rotinas do sistema.</li>
+<li><strong>Novo Browse (POUI)</strong>: uma nova grade de listagem de registros, com botões e comportamentos diferentes do modelo tradicional (WebApp).</li>
+</ul>
+<p>O TIR já foi preparado para lidar com essas mudanças na maioria dos casos, de forma automática. Esta página explica o que muda na prática e traz exemplos de como adaptar seus scripts quando for necessário.</p>
+<h2 id="nova-home">Nova Home</h2>
+<h3 id="o-que-muda">O que muda</h3>
+<p>A Nova Home altera a forma como o usuário chega até uma rotina. Na prática, isso pode afetar scripts que navegam pelo menu lateral para abrir uma tela.</p>
+<p>O acesso e a busca de rotinas pela Nova Home ainda estão evoluindo, então não existe uma recomendação única e definitiva — o ideal é avaliar caso a caso, testando o script no ambiente com a Nova Home habilitada.</p>
+<h3 id="habilitando-a-nova-home-nos-testes">Habilitando a Nova Home nos testes</h3>
+<p>Para que os testes considerem a Nova Home, adicione a seguinte chave no arquivo de configuração do TIR (<code>config.json</code>):</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;NewHome&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="acessando-rotinas-setlateralmenu-x-setprogram">Acessando rotinas: <code>SetLateralMenu</code> x <code>SetProgram</code></h3>
+<p><strong>Como era antes</strong>, usando apenas o caminho do menu:</p>
+<div class="highlight"><pre><span></span><code><span class="n">oHelper</span><span class="o">.</span><span class="n">SetLateralMenu</span><span class="p">(</span><span class="s2">&quot;Atualizações &gt; Cadastro &gt; Produto&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Com a Nova Home</strong>, pode ser necessário informar também o nome do programa e o módulo, para garantir que a rotina certa seja encontrada:</p>
+<div class="highlight"><pre><span></span><code><span class="n">oHelper</span><span class="o">.</span><span class="n">SetLateralMenu</span><span class="p">(</span>
+    <span class="s2">&quot;Atualizações &gt; Cadastro &gt; Produtos&quot;</span><span class="p">,</span>
+    <span class="n">program_name</span><span class="o">=</span><span class="s2">&quot;MATA410&quot;</span><span class="p">,</span>
+    <span class="n">module</span><span class="o">=</span><span class="s2">&quot;AGD&quot;</span>
+<span class="p">)</span>
+</code></pre></div>
+<p><strong>Alternativa mais simples e direta</strong>: se o script não depende do caminho do menu (ou seja, não precisa navegar pelos submenus para validar algo), prefira acessar a rotina diretamente pelo nome do programa com <code>SetProgram</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Exemplo simples</span>
+<span class="n">oHelper</span><span class="o">.</span><span class="n">SetProgram</span><span class="p">(</span><span class="s2">&quot;MATA010&quot;</span><span class="p">)</span>
+
+<span class="c1"># Selecionando o módulo pelo nome</span>
+<span class="n">oHelper</span><span class="o">.</span><span class="n">SetProgram</span><span class="p">(</span><span class="s2">&quot;MATA010&quot;</span><span class="p">,</span> <span class="s2">&quot;Faturamento&quot;</span><span class="p">)</span>
+
+<span class="c1"># Selecionando o módulo pela sigla</span>
+<span class="n">oHelper</span><span class="o">.</span><span class="n">SetProgram</span><span class="p">(</span><span class="s2">&quot;MATA010&quot;</span><span class="p">,</span> <span class="s2">&quot;SIGAFIN&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Dica prática</strong>: use <code>SetLateralMenu</code> só quando o script realmente precisa validar a navegação pelo menu. Nos demais casos, <code>SetProgram</code> é mais simples e mais estável.</p>
+<h2 id="novo-browse-poui">Novo Browse (POUI)</h2>
+<p>O Novo Browse é a nova grade de listagem de registros. Os botões, a busca e algumas ações mudaram de nome ou de comportamento em relação ao browse legado (WebApp).</p>
+<p>A boa notícia: o TIR identifica automaticamente qual browse está em uso e traduz a maioria dos comandos legados para o equivalente no POUI. Na maior parte dos scripts, nenhuma alteração é necessária.</p>
+<h3 id="como-saber-qual-browse-esta-sendo-usado">Como saber qual browse está sendo usado</h3>
+<p>Se precisar tomar uma decisão diferente dependendo do tipo de browse, use:</p>
+<div class="highlight"><pre><span></span><code><span class="n">oHelper</span><span class="o">.</span><span class="n">IsNewBrowse</span><span class="p">()</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Retorno</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>False</code></td>
+<td>Browse legado (WebApp)</td>
+</tr>
+<tr>
+<td><code>True</code></td>
+<td>Novo Browse (POUI)</td>
+</tr>
+</tbody>
+</table>
+<p>Na maioria dos casos você não precisa chamar esse método diretamente — ele é mais útil quando o mapeamento automático (explicado a seguir) não é suficiente.</p>
+<h3 id="mapeamento-automatico-de-botoes">Mapeamento automático de botões</h3>
+<p>O TIR já traduz automaticamente os botões mais comuns quando você usa <code>SetButton()</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Comando no script</th>
+<th>O que acontece no browse legado</th>
+<th>O que acontece no Novo Browse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SetButton("Incluir")</code></td>
+<td>Clica em "Incluir"</td>
+<td>Clica em "Incluir"</td>
+</tr>
+<tr>
+<td><code>SetButton("Alterar")</code></td>
+<td>Clica em "Alterar"</td>
+<td>Clica em "Editar"</td>
+</tr>
+<tr>
+<td><code>SetButton("Visualizar")</code></td>
+<td>Clica em "Visualizar"</td>
+<td>Clica no ícone "Visualizar"</td>
+</tr>
+<tr>
+<td><code>SetButton("Excluir")</code></td>
+<td>Clica em "Excluir"</td>
+<td>Clica em "Excluir"</td>
+</tr>
+<tr>
+<td><code>SetButton("Outras Ações", ...)</code></td>
+<td>Abre o menu "Outras Ações"</td>
+<td>Abre "Ações de Registro"</td>
+</tr>
+</tbody>
+</table>
+<p>Isso funciona de forma transparente quando o <code>SetButton</code> é chamado logo depois do <code>SearchBrowse</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="n">oHelper</span><span class="o">.</span><span class="n">SearchBrowse</span><span class="p">(</span><span class="s2">&quot;D MG 01 0001&quot;</span><span class="p">)</span>   <span class="c1"># identifica o tipo de browse</span>
+<span class="n">oHelper</span><span class="o">.</span><span class="n">SetButton</span><span class="p">(</span><span class="s2">&quot;Incluir&quot;</span><span class="p">)</span>           <span class="c1"># já é traduzido automaticamente</span>
+</code></pre></div>
+<p><strong>Quando o botão pertence ao próprio browse</strong> (e não a uma tela que abriu depois), use <code>is_browse=True</code> para garantir que o TIR confira o tipo de browse exatamente no momento do clique:</p>
+<div class="highlight"><pre><span></span><code><span class="n">oHelper</span><span class="o">.</span><span class="n">SetButton</span><span class="p">(</span><span class="s2">&quot;Incluir&quot;</span><span class="p">,</span> <span class="n">is_browse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">oHelper</span><span class="o">.</span><span class="n">SetButton</span><span class="p">(</span><span class="s2">&quot;Outras Ações&quot;</span><span class="p">,</span> <span class="s2">&quot;Excluir&quot;</span><span class="p">,</span> <span class="n">is_browse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="quando-o-script-precisa-de-ajuste-manual">Quando o script precisa de ajuste manual</h3>
+<p>Existem alguns cenários em que o mapeamento automático não é suficiente e o script precisa tratar os dois casos (legado e POUI) explicitamente.</p>
+<p><strong>1. O nome do botão mudou entre os layouts</strong> (por exemplo, "Copiar" virou "Duplicar"):</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="ow">not</span> <span class="n">oHelper</span><span class="o">.</span><span class="n">IsNewBrowse</span><span class="p">():</span>
+    <span class="n">oHelper</span><span class="o">.</span><span class="n">SetButton</span><span class="p">(</span><span class="s2">&quot;Copiar&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">ClickButton</span><span class="p">(</span><span class="s2">&quot;Duplicar&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>2. Existe uma ação intermediária que "quebra" a detecção automática</strong> (por exemplo, um <code>SetKey("F12")</code> entre a busca e o clique no botão):</p>
+<div class="highlight"><pre><span></span><code><span class="n">oHelper</span><span class="o">.</span><span class="n">SearchBrowse</span><span class="p">(</span><span class="s2">&quot;D MG 01 0001&quot;</span><span class="p">)</span>
+<span class="n">oHelper</span><span class="o">.</span><span class="n">SetKey</span><span class="p">(</span><span class="s2">&quot;F12&quot;</span><span class="p">)</span>   <span class="c1"># essa ação no meio do caminho quebra o mapeamento automático</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">oHelper</span><span class="o">.</span><span class="n">IsNewBrowse</span><span class="p">():</span>
+    <span class="n">oHelper</span><span class="o">.</span><span class="n">SetButton</span><span class="p">(</span><span class="s2">&quot;Incluir&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">ClickButton</span><span class="p">(</span><span class="s2">&quot;Incluir&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>3. A ação está dentro de "Outras Ações"</strong>:</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="ow">not</span> <span class="n">oHelper</span><span class="o">.</span><span class="n">IsNewBrowse</span><span class="p">():</span>
+    <span class="n">oHelper</span><span class="o">.</span><span class="n">SetButton</span><span class="p">(</span><span class="s2">&quot;Outras Ações&quot;</span><span class="p">,</span> <span class="s2">&quot;Excluir&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">ClickButton</span><span class="p">(</span><span class="s2">&quot;Excluir&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>4. Uma única ação legada corresponde a mais de uma ação no POUI</strong> (exemplo: "Baixar"):</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="ow">not</span> <span class="n">oHelper</span><span class="o">.</span><span class="n">IsNewBrowse</span><span class="p">():</span>
+    <span class="n">oHelper</span><span class="o">.</span><span class="n">SetButton</span><span class="p">(</span><span class="s2">&quot;Outras Ações&quot;</span><span class="p">,</span> <span class="s2">&quot;Baixar&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">ClickButton</span><span class="p">(</span><span class="s2">&quot;Ações de Registros&quot;</span><span class="p">)</span>
+    <span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">ClickPopUp</span><span class="p">(</span><span class="s2">&quot;Baixar&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Também é possível simplificar esse mesmo caso com <code>ClickDropdown</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">ClickDropdown</span><span class="p">(</span><span class="s2">&quot;Ações de Registro&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;Baixar&quot;</span><span class="p">])</span>
+</code></pre></div>
+<h3 id="pesquisando-registros-de-searchbrowse-para-filterbrowse">Pesquisando registros: de <code>SearchBrowse</code> para <code>FilterBrowse</code></h3>
+<p>No browse legado, a busca era feita com um termo único de texto. No Novo Browse, a busca passa a ser feita por <strong>filtros estruturados</strong>, ou seja, um valor específico para cada campo.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Antes (legado)</th>
+<th>Agora (POUI)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Forma de busca</td>
+<td>Termo único</td>
+<td>Filtros por campo</td>
+</tr>
+<tr>
+<td>Método</td>
+<td><code>SearchBrowse("D MG 01 0001")</code></td>
+<td><code>FilterBrowse(filters=[...])</code></td>
+</tr>
+</tbody>
+</table>
+<p>Existem duas formas de adaptar seus scripts a essa mudança:</p>
+<p><strong>Opção 1 — Compatibilidade implícita (recomendada)</strong></p>
+<p>Continue usando <code>SearchBrowse</code> normalmente, mas passe também o parâmetro <code>filters</code>. O TIR decide automaticamente a melhor forma de buscar, dependendo do tipo de browse detectado:</p>
+<div class="highlight"><pre><span></span><code><span class="n">filters</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;Filial&quot;</span><span class="p">:</span> <span class="s2">&quot;D MG 01&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Produto&quot;</span><span class="p">:</span> <span class="s2">&quot;COM000000000000000000000000022&quot;</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+
+<span class="n">oHelper</span><span class="o">.</span><span class="n">SearchBrowse</span><span class="p">(</span>
+    <span class="s2">&quot;D MG 01 COM000000000000000000000000022&quot;</span><span class="p">,</span>
+    <span class="n">filters</span><span class="o">=</span><span class="n">filters</span>
+<span class="p">)</span>
+</code></pre></div>
+<p>Essa é a forma mais simples: funciona tanto no browse legado quanto no Novo Browse, sem precisar duplicar lógica no script.</p>
+<p><strong>Opção 2 — Compatibilidade explícita (controle total)</strong></p>
+<p>Se preferir controlar manualmente o que acontece em cada caso:</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="ow">not</span> <span class="n">oHelper</span><span class="o">.</span><span class="n">IsNewBrowse</span><span class="p">():</span>
+    <span class="c1"># Fluxo legado</span>
+    <span class="n">oHelper</span><span class="o">.</span><span class="n">SearchBrowse</span><span class="p">(</span><span class="s2">&quot;D MG 01 COM000000000000000000000000022&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># Fluxo POUI</span>
+    <span class="n">filters</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;Filial&quot;</span><span class="p">:</span> <span class="s2">&quot;D MG 01&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Produto&quot;</span><span class="p">:</span> <span class="s2">&quot;COM000000000000000000000000022&quot;</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+    <span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">FilterBrowse</span><span class="p">(</span><span class="n">filters</span><span class="o">=</span><span class="n">filters</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Boa prática</strong>: no Novo Browse, sempre que possível, use o parâmetro <code>filters</code>. Se ele não for informado, o TIR tenta localizar o registro usando apenas o termo mais longo passado para busca, o que é menos preciso.</p>
+<p>Vale lembrar também que, no Novo Browse, cada nova busca via <code>filters</code> limpa automaticamente filtros e seleções anteriores, evitando que resultados de execuções passadas interfiram no teste atual.</p>
+<h2 id="cenarios-especiais">Cenários especiais</h2>
+<h3 id="comandos-exclusivos-de-releases-mais-novas">Comandos exclusivos de releases mais novas</h3>
+<p>Se um trecho do script só existe (ou só faz sentido) a partir da release 12.1.2610, use <code>GetRelease()</code> para isolar essa lógica:</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">oHelper</span><span class="o">.</span><span class="n">GetRelease</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="s2">&quot;12.1.2610&quot;</span><span class="p">:</span>
+    <span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">FilterBrowse</span><span class="p">(</span><span class="n">filters</span><span class="o">=</span><span class="n">filters</span><span class="p">)</span>
+    <span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">ClickButton</span><span class="p">(</span><span class="s2">&quot;Incluir&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="rotinas-smart-x">Rotinas "Smart X"</h3>
+<p>Rotinas que passaram por uma reformulação mais profunda (conhecidas como Smart X) tendem a ter um fluxo bem diferente do legado. Nesses casos, em vez de tentar adaptar o script antigo, o recomendado é criar um script novo, dedicado a esse fluxo.</p>
+<h3 id="e-se-eu-encontrar-um-caso-que-o-mapeamento-automatico-nao-resolve">E se eu encontrar um caso que o mapeamento automático não resolve?</h3>
+<ol>
+<li>Primeiro, tente resolver com um tratamento condicional no próprio script, usando <code>IsNewBrowse()</code> ou <code>GetRelease()</code>, como nos exemplos acima.</li>
+<li>Se não for possível, abra uma task no Ryver ou Gitter para o time de Automação avaliar uma evolução no helper.</li>
+</ol>
+<h2 id="checklist-rapido-de-migracao">Checklist rápido de migração</h2>
+<p><strong>Nova Home</strong></p>
+<ul>
+<li>[ ] Habilitar <code>"NewHome": true</code> no <code>config.json</code>, quando aplicável.</li>
+<li>[ ] Revisar usos de <code>SetLateralMenu</code> e adicionar <code>program_name</code> / <code>module</code> quando necessário.</li>
+<li>[ ] Avaliar migrar para <code>SetProgram</code> quando o caminho do menu não for relevante para o teste.</li>
+</ul>
+<p><strong>Novo Browse</strong></p>
+<ul>
+<li>[ ] Revisar usos de <code>SearchBrowse</code> e avaliar adicionar o parâmetro <code>filters</code>.</li>
+<li>[ ] Escolher, por script, entre compatibilidade implícita ou explícita.</li>
+<li>[ ] Revisar cliques em botões, usando <code>is_browse=True</code> quando o botão pertence ao próprio browse.</li>
+<li>[ ] Tratar botões renomeados e ações intermediárias com <code>IsNewBrowse()</code>.</li>
+<li>[ ] Isolar lógicas exclusivas da nova release com <code>GetRelease() &gt;= "12.1.2610"</code>.</li>
+<li>[ ] Para rotinas Smart X, planejar um script dedicado.</li>
+<li>[ ] Validar a execução nas releases 12.1.2510 e 12.1.2610.</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      
+    
+  </body>
+</html>
