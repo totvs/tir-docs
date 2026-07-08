@@ -994,8 +994,7 @@
 <p><strong>Com a Nova Home</strong>, pode ser necessário informar também o nome do programa e o módulo, para garantir que a rotina certa seja encontrada:</p>
 <div class="highlight"><pre><span></span><code><span class="n">oHelper</span><span class="o">.</span><span class="n">SetLateralMenu</span><span class="p">(</span>
     <span class="s2">&quot;Atualizações &gt; Cadastro &gt; Produtos&quot;</span><span class="p">,</span>
-    <span class="n">program_name</span><span class="o">=</span><span class="s2">&quot;MATA410&quot;</span><span class="p">,</span>
-    <span class="n">module</span><span class="o">=</span><span class="s2">&quot;AGD&quot;</span>
+    <span class="n">program_name</span><span class="o">=</span><span class="s2">&quot;Compras&quot;</span><span class="p">,</span>
 <span class="p">)</span>
 </code></pre></div>
 <p><strong>Alternativa mais simples e direta</strong>: se o script não depende do caminho do menu (ou seja, não precisa navegar pelos submenus para validar algo), prefira acessar a rotina diretamente pelo nome do programa com <code>SetProgram</code>:</p>
@@ -1004,9 +1003,6 @@
 
 <span class="c1"># Selecionando o módulo pelo nome</span>
 <span class="n">oHelper</span><span class="o">.</span><span class="n">SetProgram</span><span class="p">(</span><span class="s2">&quot;MATA010&quot;</span><span class="p">,</span> <span class="s2">&quot;Faturamento&quot;</span><span class="p">)</span>
-
-<span class="c1"># Selecionando o módulo pela sigla</span>
-<span class="n">oHelper</span><span class="o">.</span><span class="n">SetProgram</span><span class="p">(</span><span class="s2">&quot;MATA010&quot;</span><span class="p">,</span> <span class="s2">&quot;SIGAFIN&quot;</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Dica prática</strong>: use <code>SetLateralMenu</code> só quando o script realmente precisa validar a navegação pelo menu. Nos demais casos, <code>SetProgram</code> é mais simples e mais estável.</p>
 <h2 id="novo-browse-poui">Novo Browse (POUI)</h2>
