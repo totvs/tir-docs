@@ -1,4 +1,4 @@
-# TIR RECORD PROTHEUS 1.0.0
+# TIR RECORD PROTHEUS 3.0.0
 
 - Esse gravador tem como objetivo capturar ações que o usuário realiza no [Protheus WebApp (Smartclient+HTML)](https://tdn.totvs.com/pages/viewpage.action?pageId=448596783) e transformar essas ações em um script para o framework [TIR](https://github.com/totvs/tir).
 
@@ -105,9 +105,9 @@ Para que o SetValue seja gravado de forma correta antes de começar a preencher 
 
 ## Botão "+Métodos"
 ### A opção +Métodos do TIR Record permite que você crie alguns métodos adicionas:
-- Método AsserTrue():
+- Método AssertTrue():
 	O método AssertTrue ou AssertFalse deve ser utilizado ao final de cada caso de teste, [acesse a documentação do TIR para mais informações](https://totvs.github.io/tir/webapp.html?highlight=assert#tir.main.Webapp.AssertTrue)
-- Método AsserFalse():
+- Método AssertFalse():
 	O método AssertTrue ou AssertFalse deve ser utilizado ao final de cada caso de teste, [acesse a documentação do TIR para mais informações](https://totvs.github.io/tir/webapp.html?highlight=assert#tir.main.Webapp.AssertFalse)
 
 - Método LoadGrid():
