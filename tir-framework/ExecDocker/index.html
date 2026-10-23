@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#execucao-via-docker" class="md-skip">
+        <a href="#execucao-via-docker-compose" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -398,15 +398,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#docker-pull-totvsengprotir" class="md-nav__link">
-    docker pull totvsengpro/tir
+  <a href="#arquivos-necessarios" class="md-nav__link">
+    Arquivos necessários
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    
+  <a href="#executar-o-tir" class="md-nav__link">
+    Executar o TIR
   </a>
   
 </li>
@@ -735,15 +735,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#docker-pull-totvsengprotir" class="md-nav__link">
-    docker pull totvsengpro/tir
+  <a href="#arquivos-necessarios" class="md-nav__link">
+    Arquivos necessários
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    
+  <a href="#executar-o-tir" class="md-nav__link">
+    Executar o TIR
   </a>
   
 </li>
@@ -763,29 +763,53 @@
                   
 
 
-<h1 id="execucao-via-docker">Execução via Docker</h1>
-<p>É possível a execução do TIR via Docker. Para isso é necessário que:</p>
+<h1 id="execucao-via-docker-compose">Execução via Docker Compose</h1>
+<p>É possível executar o TIR em Docker apontando para um ambiente externo do Protheus. Este procedimento usa o <a href="https://www.docker.com/products/docker-desktop/">Docker Desktop</a> e Docker Compose.</p>
+<h2 id="arquivos-necessarios">Arquivos necessários</h2>
+<p>Crie um diretório para armazenar os arquivos da execução. Nesse diretório, mantenha o <code>compose.yaml</code>, o <code>config.json</code>, a suíte de testes indicada no Compose e a pasta de saída dos screenshots.</p>
+<p>Crie um arquivo <code>compose.yaml</code> com a estrutura abaixo:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">services</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">tir</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">totvsengpro/tir:latest</span>
+<span class="w">    </span><span class="nt">working_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/local</span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">.:/local</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/passwd:/etc/passwd:ro</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/group:/etc/group:ro</span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">DISPLAY</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;${DISPLAY:-:0}&quot;</span>
+<span class="w">      </span><span class="nt">HOME</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/tmp</span>
+<span class="w">    </span><span class="nt">user</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;${USER_ID:-1000}:${GROUP_ID:-1000}&quot;</span>
+<span class="w">    </span><span class="nt">stdin_open</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">tty</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python3 /local/ATFA036TESTSUITE.py</span>
+</code></pre></div>
+<blockquote>
+<p><strong>Importante:</strong> o valor de <code>command</code> deve apontar para uma suíte existente no mesmo diretório do <code>compose.yaml</code>. Caso a sua suíte tenha outro nome, altere <code>ATFA036TESTSUITE.py</code> para o nome correto.</p>
+</blockquote>
+<p>Os mounts <code>/etc/passwd</code> e <code>/etc/group</code>, assim como as variáveis <code>USER_ID</code> e <code>GROUP_ID</code>, são destinados a ambientes Linux/WSL. No Docker Desktop executado apenas no Windows, avalie se esses itens são necessários para o seu ambiente. Para execução sem interface gráfica, mantenha <code>"Headless": true</code> no <code>config.json</code>.</p>
+<h2 id="executar-o-tir">Executar o TIR</h2>
+<blockquote>
+<p><strong>Importante:</strong> antes de executar o TIR via Docker, certifique-se de que o WebAgent esteja desativado no ambiente Protheus.</p>
+</blockquote>
 <ol>
-<li>Baixe os exemplos dos arquivos que serão necessários para a execução na pasta <a href="https://github.com/totvs/tir-script-samples/tree/master/basic_template">basic template</a>.</li>
-<li>No PowerShell, acesse a pasta onde descompactou os arquivos.</li>
-<li>Execute o comando:<blockquote>
-<h4 id="docker-pull-totvsengprotir">docker pull totvsengpro/tir</h4>
-</blockquote>
-</li>
-<li>Em seguida, execute o comando conforme exemplo abaixo:<blockquote>
-<h4 id="_1"></h4>
-<pre><code>docker run --rm -ti \
--v ${PWD}:/local \
--v /etc/passwd:/etc/passwd \
--v /etc/groups:/etc/groups \
--e DISPLAY=:0 \
--u $(id -u):$(id -g) \
-totvsengpro/tir:latest python3 /local/ATFA036TESTSUITE.py
-</code></pre>
-</blockquote>
-</li>
+<li>Configure o <code>config.json</code> com os dados do ambiente externo. O campo <code>Url</code> deve conter a URL do WebApp Protheus que será acessado pelo container. Para a execução no Docker, recomendamos habilitar o modo sem interface gráfica:</li>
 </ol>
-<p>As imagens estão disponíveis em <a href="https://hub.docker.com/r/totvsengpro/tir">Docker Hub</a>.</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;Headless&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Consulte a descrição dos demais parâmetros em <a href="https://totvs.github.io/tir/configjson.html">config.json</a>.
+2. No PowerShell, execute os comandos no diretório que contém o <code>compose.yaml</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="n">docker</span> <span class="n">compose</span> <span class="n">pull</span>
+<span class="n">docker</span> <span class="n">compose</span> <span class="n">up</span> <span class="p">-</span><span class="n">-abort-on-container-exit</span>
+</code></pre></div>
+<p>Para executar os mesmos comandos de outro diretório, informe o arquivo Compose com <code>-f</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="n">docker</span> <span class="n">compose</span> <span class="o">-f</span> <span class="p">&lt;</span><span class="n">caminho-para-o-compose</span><span class="p">.</span><span class="n">yaml</span><span class="p">&gt;</span> <span class="n">pull</span>
+<span class="n">docker</span> <span class="n">compose</span> <span class="o">-f</span> <span class="p">&lt;</span><span class="n">caminho-para-o-compose</span><span class="p">.</span><span class="n">yaml</span><span class="p">&gt;</span> <span class="n">up</span> <span class="p">-</span><span class="n">-abort-on-container-exit</span>
+</code></pre></div>
+<p>O volume <code>.:/local</code> torna os arquivos do diretório do Compose disponíveis no container e preserva no host os screenshots e outros arquivos gerados pela execução.</p>
+<p>As imagens estão disponíveis no <a href="https://hub.docker.com/r/totvsengpro/tir">Docker Hub</a>.</p>
 
 
 

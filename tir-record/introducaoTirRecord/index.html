@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bem-vindo-ao-tir-record-100" class="md-skip">
+        <a href="#bem-vindo-ao-tir-record-300" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -483,6 +483,26 @@
     Ações suportadas
   </a>
   
+    <nav class="md-nav" aria-label="Ações suportadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#webapp" class="md-nav__link">
+    WebApp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#po-ui" class="md-nav__link">
+    PO-UI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -732,6 +752,26 @@
     Ações suportadas
   </a>
   
+    <nav class="md-nav" aria-label="Ações suportadas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#webapp" class="md-nav__link">
+    WebApp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#po-ui" class="md-nav__link">
+    PO-UI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -749,26 +789,58 @@
                   
 
 
-<h1 id="bem-vindo-ao-tir-record-100">Bem-vindo ao TIR Record 1.0.0</h1>
+<h1 id="bem-vindo-ao-tir-record-300">Bem-vindo ao TIR Record 3.0.0</h1>
 <p>TIR Record é um projeto que visa facilitar a criação de scripts para o <a href="https://github.com/totvs/tir">TIR</a>, o TIR Record não substitui
 a necessidade de entender e compreender como o TIR funciona (recomendamos que leiam a <a href="https://totvs.github.io/tir/">documentação</a> e o <a href="https://github.com/totvs/tir">README do projeto</a>).</p>
+<p>A partir da versão 3.0.0 o TIR Record reconhece ações tanto nas telas <strong>WebApp (Smartclient+HTML)</strong> quanto nas telas <strong>PO-UI</strong>, gerando os métodos correspondentes em cada contexto.</p>
 <h2 id="acoes-suportadas">Ações suportadas</h2>
+<p>As ações suportadas variam conforme o tipo de interface utilizada. Abaixo estão separadas por <strong>WebApp</strong> e <strong>PO-UI</strong>.</p>
+<h3 id="webapp">WebApp</h3>
 <ul>
 <li><code>Preenchimento de campos (SetValue)</code></li>
 <li><code>Cliques em botões (SetButton)</code></li>
-<li><code>Checar o resultado (CheckResult)</code></li>
+<li><code>Marcar itens / checkbox (ClickBox)</code></li>
 <li><code>Clicar em pastas (ClickFolder)</code></li>
 <li><code>Clicar em textos (ClickLabel)</code></li>
-<li><code>Clicar em um menu (ClickMenuPopUp)</code></li>
+<li><code>Clicar em um item de menu (ClickMenuPopUpItem)</code></li>
 <li><code>Interagir com o componente "Tree" (ClickTree)</code></li>
+<li><code>Checar o resultado (CheckResult)</code></li>
 <li><code>Pesquisar uma rotina (Program)</code></li>
 <li><code>Pesquisar uma rotina utilizando o menu lateral (SetLateralMenu)</code></li>
 <li><code>Pressionar uma tecla (SetKey)</code></li>
 <li><code>Realizar uma pesquisa (SearchBrowse)</code></li>
 <li><code>Adicionar o comando LoadGrid</code></li>
+<li><code>Aguardar processamento (WaitProcessing)</code></li>
+<li><code>Aguardar exibição de um texto (WaitShow)</code></li>
 <li><code>Validar se as operações foram verdadeiras (AssertTrue)</code></li>
 <li><code>Validar se as operações foram falsas (AssertFalse)</code></li>
-<li><code>Método de configuração da classe (SetupClass)</code></li>
+<li><code>Método de configuração da classe (SetupClass → Setup e Program)</code></li>
+<li><code>Finalizar o ambiente (TearDown)</code></li>
+</ul>
+<h3 id="po-ui">PO-UI</h3>
+<ul>
+<li><code>Preenchimento de campos (InputValue)</code></li>
+<li><code>Cliques em botões (ClickButton)</code></li>
+<li><code>Clicar em ícones (ClickIcon)</code></li>
+<li><code>Clicar no avatar (ClickAvatar)</code></li>
+<li><code>Clicar em um menu (ClickMenu)</code></li>
+<li><code>Clicar em popup (ClickPopup)</code></li>
+<li><code>Selecionar valor em combo (ClickCombo)</code></li>
+<li><code>Selecionar valor em select (ClickSelect)</code></li>
+<li><code>Marcar checkbox (ClickCheckBox)</code></li>
+<li><code>Selecionar radio (ClickRadio)</code></li>
+<li><code>Alternar switch (ClickSwitch)</code></li>
+<li><code>Interagir com tabelas (ClickTable)</code></li>
+<li><code>Interagir com widgets (ClickWidget)</code></li>
+<li><code>Navegar em abas (POtabs)</code></li>
+<li><code>Realizar pesquisa (POSearch)</code></li>
+<li><code>Checar o resultado (CheckResult)</code></li>
+<li><code>Pesquisar uma rotina (Program)</code></li>
+<li><code>Aguardar processamento (WaitProcessing)</code></li>
+<li><code>Aguardar exibição de um texto (WaitShow)</code></li>
+<li><code>Validar se as operações foram verdadeiras (AssertTrue)</code></li>
+<li><code>Validar se as operações foram falsas (AssertFalse)</code></li>
+<li><code>Finalizar o ambiente (TearDown)</code></li>
 </ul>
 
 
