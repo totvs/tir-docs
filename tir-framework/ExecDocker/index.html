@@ -793,16 +793,16 @@
 <p><strong>Importante:</strong> antes de executar o TIR via Docker, certifique-se de que o WebAgent esteja desativado no ambiente Protheus.</p>
 </blockquote>
 <ol>
-<li>Configure o <code>config.json</code> com os dados do ambiente externo. O campo <code>Url</code> deve conter a URL do WebApp Protheus que será acessado pelo container. Para a execução no Docker, recomendamos habilitar o modo sem interface gráfica:</li>
-</ol>
+<li>
+<p>Configure o <code>config.json</code> com os dados do ambiente externo. O campo <code>Url</code> deve conter a URL do WebApp Protheus que será acessado pelo container. Para a execução no Docker, recomendamos habilitar o modo sem interface gráfica:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">"Headless"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>Consulte a descrição dos demais parâmetros em <a href="https://totvs.github.io/tir/configjson.html">config.json</a>.</p>
-<ol>
-<li>No PowerShell, execute os comandos no diretório que contém o <code>compose.yaml</code>:</li>
-</ol>
+</li>
+<li>
+<p>No PowerShell, execute os comandos no diretório que contém o <code>compose.yaml</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="n">docker</span> <span class="n">compose</span> <span class="n">pull</span>
 <span class="n">docker</span> <span class="n">compose</span> <span class="n">up</span> <span class="p">-</span><span class="n">-abort-on-container-exit</span>
 </code></pre></div>
@@ -810,6 +810,8 @@
 <div class="highlight"><pre><span></span><code><span class="n">docker</span> <span class="n">compose</span> <span class="o">-f</span> <span class="p">&lt;</span><span class="n">caminho-para-o-compose</span><span class="p">.</span><span class="n">yaml</span><span class="p">&gt;</span> <span class="n">pull</span>
 <span class="n">docker</span> <span class="n">compose</span> <span class="o">-f</span> <span class="p">&lt;</span><span class="n">caminho-para-o-compose</span><span class="p">.</span><span class="n">yaml</span><span class="p">&gt;</span> <span class="n">up</span> <span class="p">-</span><span class="n">-abort-on-container-exit</span>
 </code></pre></div>
+</li>
+</ol>
 <p>O volume <code>.:/local</code> torna os arquivos do diretório do Compose disponíveis no container e preserva no host os screenshots e outros arquivos gerados pela execução.</p>
 <p>As imagens estão disponíveis no <a href="https://hub.docker.com/r/totvsengpro/tir">Docker Hub</a>.</p>
 
