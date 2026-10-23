@@ -43,6 +43,7 @@ Os mounts `/etc/passwd` e `/etc/group`, assim como as variáveis `USER_ID` e `GR
    ```
 
    Consulte a descrição dos demais parâmetros em [config.json](https://totvs.github.io/tir/configjson.html).
+
 2. No PowerShell, execute os comandos no diretório que contém o `compose.yaml`:
 
    ```powershell
