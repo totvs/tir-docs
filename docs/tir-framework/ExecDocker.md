@@ -36,27 +36,27 @@ Os mounts `/etc/passwd` e `/etc/group`, assim como as variáveis `USER_ID` e `GR
 
 1. Configure o `config.json` com os dados do ambiente externo. O campo `Url` deve conter a URL do WebApp Protheus que será acessado pelo container. Para a execução no Docker, recomendamos habilitar o modo sem interface gráfica:
 
-   ```json
-   {
-     "Headless": true
-   }
-   ```
+    ```json
+    {
+      "Headless": true
+    }
+    ```
 
-   Consulte a descrição dos demais parâmetros em [config.json](https://totvs.github.io/tir/configjson.html).
+    Consulte a descrição dos demais parâmetros em [config.json](https://totvs.github.io/tir/configjson.html).
 
 2. No PowerShell, execute os comandos no diretório que contém o `compose.yaml`:
 
-   ```powershell
-   docker compose pull
-   docker compose up --abort-on-container-exit
-   ```
+    ```powershell
+    docker compose pull
+    docker compose up --abort-on-container-exit
+    ```
 
-   Para executar os mesmos comandos de outro diretório, informe o arquivo Compose com `-f`:
+    Para executar os mesmos comandos de outro diretório, informe o arquivo Compose com `-f`:
 
-   ```powershell
-   docker compose -f <caminho-para-o-compose.yaml> pull
-   docker compose -f <caminho-para-o-compose.yaml> up --abort-on-container-exit
-   ```
+    ```powershell
+    docker compose -f <caminho-para-o-compose.yaml> pull
+    docker compose -f <caminho-para-o-compose.yaml> up --abort-on-container-exit
+    ```
 
 O volume `.:/local` torna os arquivos do diretório do Compose disponíveis no container e preserva no host os screenshots e outros arquivos gerados pela execução.
 
