@@ -984,25 +984,25 @@
 <h3 id="habilitando-a-nova-home-nos-testes">Habilitando a Nova Home nos testes</h3>
 <p>Para que os testes considerem a Nova Home, adicione a seguinte chave no arquivo de configuração do TIR (<code>config.json</code>):</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;NewHome&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="nt">"NewHome"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
 <span class="p">}</span>
 </code></pre></div>
 <h3 id="acessando-rotinas-setlateralmenu-x-setprogram">Acessando rotinas: <code>SetLateralMenu</code> x <code>SetProgram</code></h3>
 <p><strong>Como era antes</strong>, usando apenas o caminho do menu:</p>
-<div class="highlight"><pre><span></span><code><span class="n">oHelper</span><span class="o">.</span><span class="n">SetLateralMenu</span><span class="p">(</span><span class="s2">&quot;Atualizações &gt; Cadastro &gt; Produto&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">oHelper</span><span class="o">.</span><span class="n">SetLateralMenu</span><span class="p">(</span><span class="s2">"Atualizações &gt; Cadastro &gt; Produto"</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Com a Nova Home</strong>, pode ser necessário informar também o nome do programa e o módulo, para garantir que a rotina certa seja encontrada:</p>
 <div class="highlight"><pre><span></span><code><span class="n">oHelper</span><span class="o">.</span><span class="n">SetLateralMenu</span><span class="p">(</span>
-    <span class="s2">&quot;Atualizações &gt; Cadastro &gt; Produtos&quot;</span><span class="p">,</span>
-    <span class="n">program_name</span><span class="o">=</span><span class="s2">&quot;Compras&quot;</span><span class="p">,</span>
+    <span class="s2">"Atualizações &gt; Cadastro &gt; Produtos"</span><span class="p">,</span>
+    <span class="n">program_name</span><span class="o">=</span><span class="s2">"Compras"</span><span class="p">,</span>
 <span class="p">)</span>
 </code></pre></div>
 <p><strong>Alternativa mais simples e direta</strong>: se o script não depende do caminho do menu (ou seja, não precisa navegar pelos submenus para validar algo), prefira acessar a rotina diretamente pelo nome do programa com <code>SetProgram</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Exemplo simples</span>
-<span class="n">oHelper</span><span class="o">.</span><span class="n">SetProgram</span><span class="p">(</span><span class="s2">&quot;MATA010&quot;</span><span class="p">)</span>
+<span class="n">oHelper</span><span class="o">.</span><span class="n">SetProgram</span><span class="p">(</span><span class="s2">"MATA010"</span><span class="p">)</span>
 
 <span class="c1"># Selecionando o módulo pelo nome</span>
-<span class="n">oHelper</span><span class="o">.</span><span class="n">SetProgram</span><span class="p">(</span><span class="s2">&quot;MATA010&quot;</span><span class="p">,</span> <span class="s2">&quot;Faturamento&quot;</span><span class="p">)</span>
+<span class="n">oHelper</span><span class="o">.</span><span class="n">SetProgram</span><span class="p">(</span><span class="s2">"MATA010"</span><span class="p">,</span> <span class="s2">"Faturamento"</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Dica prática</strong>: use <code>SetLateralMenu</code> só quando o script realmente precisa validar a navegação pelo menu. Nos demais casos, <code>SetProgram</code> é mais simples e mais estável.</p>
 <h2 id="novo-browse-poui">Novo Browse (POUI)</h2>
@@ -1070,45 +1070,45 @@
 </tbody>
 </table>
 <p>Isso funciona de forma transparente quando o <code>SetButton</code> é chamado logo depois do <code>SearchBrowse</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="n">oHelper</span><span class="o">.</span><span class="n">SearchBrowse</span><span class="p">(</span><span class="s2">&quot;D MG 01 0001&quot;</span><span class="p">)</span>   <span class="c1"># identifica o tipo de browse</span>
-<span class="n">oHelper</span><span class="o">.</span><span class="n">SetButton</span><span class="p">(</span><span class="s2">&quot;Incluir&quot;</span><span class="p">)</span>           <span class="c1"># já é traduzido automaticamente</span>
+<div class="highlight"><pre><span></span><code><span class="n">oHelper</span><span class="o">.</span><span class="n">SearchBrowse</span><span class="p">(</span><span class="s2">"D MG 01 0001"</span><span class="p">)</span>   <span class="c1"># identifica o tipo de browse</span>
+<span class="n">oHelper</span><span class="o">.</span><span class="n">SetButton</span><span class="p">(</span><span class="s2">"Incluir"</span><span class="p">)</span>           <span class="c1"># já é traduzido automaticamente</span>
 </code></pre></div>
 <p><strong>Quando o botão pertence ao próprio browse</strong> (e não a uma tela que abriu depois), use <code>is_browse=True</code> para garantir que o TIR confira o tipo de browse exatamente no momento do clique:</p>
-<div class="highlight"><pre><span></span><code><span class="n">oHelper</span><span class="o">.</span><span class="n">SetButton</span><span class="p">(</span><span class="s2">&quot;Incluir&quot;</span><span class="p">,</span> <span class="n">is_browse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">oHelper</span><span class="o">.</span><span class="n">SetButton</span><span class="p">(</span><span class="s2">&quot;Outras Ações&quot;</span><span class="p">,</span> <span class="s2">&quot;Excluir&quot;</span><span class="p">,</span> <span class="n">is_browse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">oHelper</span><span class="o">.</span><span class="n">SetButton</span><span class="p">(</span><span class="s2">"Incluir"</span><span class="p">,</span> <span class="n">is_browse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">oHelper</span><span class="o">.</span><span class="n">SetButton</span><span class="p">(</span><span class="s2">"Outras Ações"</span><span class="p">,</span> <span class="s2">"Excluir"</span><span class="p">,</span> <span class="n">is_browse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></div>
 <h3 id="quando-o-script-precisa-de-ajuste-manual">Quando o script precisa de ajuste manual</h3>
 <p>Existem alguns cenários em que o mapeamento automático não é suficiente e o script precisa tratar os dois casos (legado e POUI) explicitamente.</p>
 <p><strong>1. O nome do botão mudou entre os layouts</strong> (por exemplo, "Copiar" virou "Duplicar"):</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="ow">not</span> <span class="n">oHelper</span><span class="o">.</span><span class="n">IsNewBrowse</span><span class="p">():</span>
-    <span class="n">oHelper</span><span class="o">.</span><span class="n">SetButton</span><span class="p">(</span><span class="s2">&quot;Copiar&quot;</span><span class="p">)</span>
+    <span class="n">oHelper</span><span class="o">.</span><span class="n">SetButton</span><span class="p">(</span><span class="s2">"Copiar"</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">ClickButton</span><span class="p">(</span><span class="s2">&quot;Duplicar&quot;</span><span class="p">)</span>
+    <span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">ClickButton</span><span class="p">(</span><span class="s2">"Duplicar"</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>2. Existe uma ação intermediária que "quebra" a detecção automática</strong> (por exemplo, um <code>SetKey("F12")</code> entre a busca e o clique no botão):</p>
-<div class="highlight"><pre><span></span><code><span class="n">oHelper</span><span class="o">.</span><span class="n">SearchBrowse</span><span class="p">(</span><span class="s2">&quot;D MG 01 0001&quot;</span><span class="p">)</span>
-<span class="n">oHelper</span><span class="o">.</span><span class="n">SetKey</span><span class="p">(</span><span class="s2">&quot;F12&quot;</span><span class="p">)</span>   <span class="c1"># essa ação no meio do caminho quebra o mapeamento automático</span>
+<div class="highlight"><pre><span></span><code><span class="n">oHelper</span><span class="o">.</span><span class="n">SearchBrowse</span><span class="p">(</span><span class="s2">"D MG 01 0001"</span><span class="p">)</span>
+<span class="n">oHelper</span><span class="o">.</span><span class="n">SetKey</span><span class="p">(</span><span class="s2">"F12"</span><span class="p">)</span>   <span class="c1"># essa ação no meio do caminho quebra o mapeamento automático</span>
 
 <span class="k">if</span> <span class="ow">not</span> <span class="n">oHelper</span><span class="o">.</span><span class="n">IsNewBrowse</span><span class="p">():</span>
-    <span class="n">oHelper</span><span class="o">.</span><span class="n">SetButton</span><span class="p">(</span><span class="s2">&quot;Incluir&quot;</span><span class="p">)</span>
+    <span class="n">oHelper</span><span class="o">.</span><span class="n">SetButton</span><span class="p">(</span><span class="s2">"Incluir"</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">ClickButton</span><span class="p">(</span><span class="s2">&quot;Incluir&quot;</span><span class="p">)</span>
+    <span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">ClickButton</span><span class="p">(</span><span class="s2">"Incluir"</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>3. A ação está dentro de "Outras Ações"</strong>:</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="ow">not</span> <span class="n">oHelper</span><span class="o">.</span><span class="n">IsNewBrowse</span><span class="p">():</span>
-    <span class="n">oHelper</span><span class="o">.</span><span class="n">SetButton</span><span class="p">(</span><span class="s2">&quot;Outras Ações&quot;</span><span class="p">,</span> <span class="s2">&quot;Excluir&quot;</span><span class="p">)</span>
+    <span class="n">oHelper</span><span class="o">.</span><span class="n">SetButton</span><span class="p">(</span><span class="s2">"Outras Ações"</span><span class="p">,</span> <span class="s2">"Excluir"</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">ClickButton</span><span class="p">(</span><span class="s2">&quot;Excluir&quot;</span><span class="p">)</span>
+    <span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">ClickButton</span><span class="p">(</span><span class="s2">"Excluir"</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>4. Uma única ação legada corresponde a mais de uma ação no POUI</strong> (exemplo: "Baixar"):</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="ow">not</span> <span class="n">oHelper</span><span class="o">.</span><span class="n">IsNewBrowse</span><span class="p">():</span>
-    <span class="n">oHelper</span><span class="o">.</span><span class="n">SetButton</span><span class="p">(</span><span class="s2">&quot;Outras Ações&quot;</span><span class="p">,</span> <span class="s2">&quot;Baixar&quot;</span><span class="p">)</span>
+    <span class="n">oHelper</span><span class="o">.</span><span class="n">SetButton</span><span class="p">(</span><span class="s2">"Outras Ações"</span><span class="p">,</span> <span class="s2">"Baixar"</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">ClickButton</span><span class="p">(</span><span class="s2">&quot;Ações de Registros&quot;</span><span class="p">)</span>
-    <span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">ClickPopUp</span><span class="p">(</span><span class="s2">&quot;Baixar&quot;</span><span class="p">)</span>
+    <span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">ClickButton</span><span class="p">(</span><span class="s2">"Ações de Registros"</span><span class="p">)</span>
+    <span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">ClickPopUp</span><span class="p">(</span><span class="s2">"Baixar"</span><span class="p">)</span>
 </code></pre></div>
 <p>Também é possível simplificar esse mesmo caso com <code>ClickDropdown</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">ClickDropdown</span><span class="p">(</span><span class="s2">&quot;Ações de Registro&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;Baixar&quot;</span><span class="p">])</span>
+<div class="highlight"><pre><span></span><code><span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">ClickDropdown</span><span class="p">(</span><span class="s2">"Ações de Registro"</span><span class="p">,</span> <span class="p">[</span><span class="s2">"Baixar"</span><span class="p">])</span>
 </code></pre></div>
 <h3 id="pesquisando-registros-de-searchbrowse-para-filterbrowse">Pesquisando registros: de <code>SearchBrowse</code> para <code>FilterBrowse</code></h3>
 <p>No browse legado, a busca era feita com um termo único de texto. No Novo Browse, a busca passa a ser feita por <strong>filtros estruturados</strong>, ou seja, um valor específico para cada campo.</p>
@@ -1138,13 +1138,13 @@
 <p>Continue usando <code>SearchBrowse</code> normalmente, mas passe também o parâmetro <code>filters</code>. O TIR decide automaticamente a melhor forma de buscar, dependendo do tipo de browse detectado:</p>
 <div class="highlight"><pre><span></span><code><span class="n">filters</span> <span class="o">=</span> <span class="p">[</span>
     <span class="p">{</span>
-        <span class="s2">&quot;Filial&quot;</span><span class="p">:</span> <span class="s2">&quot;D MG 01&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;Produto&quot;</span><span class="p">:</span> <span class="s2">&quot;COM000000000000000000000000022&quot;</span>
+        <span class="s2">"Filial"</span><span class="p">:</span> <span class="s2">"D MG 01"</span><span class="p">,</span>
+        <span class="s2">"Produto"</span><span class="p">:</span> <span class="s2">"COM000000000000000000000000022"</span>
     <span class="p">}</span>
 <span class="p">]</span>
 
 <span class="n">oHelper</span><span class="o">.</span><span class="n">SearchBrowse</span><span class="p">(</span>
-    <span class="s2">&quot;D MG 01 COM000000000000000000000000022&quot;</span><span class="p">,</span>
+    <span class="s2">"D MG 01 COM000000000000000000000000022"</span><span class="p">,</span>
     <span class="n">filters</span><span class="o">=</span><span class="n">filters</span>
 <span class="p">)</span>
 </code></pre></div>
@@ -1153,13 +1153,13 @@
 <p>Se preferir controlar manualmente o que acontece em cada caso:</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="ow">not</span> <span class="n">oHelper</span><span class="o">.</span><span class="n">IsNewBrowse</span><span class="p">():</span>
     <span class="c1"># Fluxo legado</span>
-    <span class="n">oHelper</span><span class="o">.</span><span class="n">SearchBrowse</span><span class="p">(</span><span class="s2">&quot;D MG 01 COM000000000000000000000000022&quot;</span><span class="p">)</span>
+    <span class="n">oHelper</span><span class="o">.</span><span class="n">SearchBrowse</span><span class="p">(</span><span class="s2">"D MG 01 COM000000000000000000000000022"</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="c1"># Fluxo POUI</span>
     <span class="n">filters</span> <span class="o">=</span> <span class="p">[</span>
         <span class="p">{</span>
-            <span class="s2">&quot;Filial&quot;</span><span class="p">:</span> <span class="s2">&quot;D MG 01&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;Produto&quot;</span><span class="p">:</span> <span class="s2">&quot;COM000000000000000000000000022&quot;</span>
+            <span class="s2">"Filial"</span><span class="p">:</span> <span class="s2">"D MG 01"</span><span class="p">,</span>
+            <span class="s2">"Produto"</span><span class="p">:</span> <span class="s2">"COM000000000000000000000000022"</span>
         <span class="p">}</span>
     <span class="p">]</span>
     <span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">FilterBrowse</span><span class="p">(</span><span class="n">filters</span><span class="o">=</span><span class="n">filters</span><span class="p">)</span>
@@ -1169,9 +1169,9 @@
 <h2 id="cenarios-especiais">Cenários especiais</h2>
 <h3 id="comandos-exclusivos-de-releases-mais-novas">Comandos exclusivos de releases mais novas</h3>
 <p>Se um trecho do script só existe (ou só faz sentido) a partir da release 12.1.2610, use <code>GetRelease()</code> para isolar essa lógica:</p>
-<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">oHelper</span><span class="o">.</span><span class="n">GetRelease</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="s2">&quot;12.1.2610&quot;</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">oHelper</span><span class="o">.</span><span class="n">GetRelease</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="s2">"12.1.2610"</span><span class="p">:</span>
     <span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">FilterBrowse</span><span class="p">(</span><span class="n">filters</span><span class="o">=</span><span class="n">filters</span><span class="p">)</span>
-    <span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">ClickButton</span><span class="p">(</span><span class="s2">&quot;Incluir&quot;</span><span class="p">)</span>
+    <span class="n">oHelperPOUI</span><span class="o">.</span><span class="n">ClickButton</span><span class="p">(</span><span class="s2">"Incluir"</span><span class="p">)</span>
 </code></pre></div>
 <h3 id="rotinas-smart-x">Rotinas "Smart X"</h3>
 <p>Rotinas que passaram por uma reformulação mais profunda (conhecidas como Smart X) tendem a ter um fluxo bem diferente do legado. Nesses casos, em vez de tentar adaptar o script antigo, o recomendado é criar um script novo, dedicado a esse fluxo.</p>

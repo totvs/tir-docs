@@ -777,9 +777,9 @@
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/passwd:/etc/passwd:ro</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/etc/group:/etc/group:ro</span>
 <span class="w">    </span><span class="nt">environment</span><span class="p">:</span>
-<span class="w">      </span><span class="nt">DISPLAY</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;${DISPLAY:-:0}&quot;</span>
+<span class="w">      </span><span class="nt">DISPLAY</span><span class="p">:</span><span class="w"> </span><span class="s">"${DISPLAY:-:0}"</span>
 <span class="w">      </span><span class="nt">HOME</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/tmp</span>
-<span class="w">    </span><span class="nt">user</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;${USER_ID:-1000}:${GROUP_ID:-1000}&quot;</span>
+<span class="w">    </span><span class="nt">user</span><span class="p">:</span><span class="w"> </span><span class="s">"${USER_ID:-1000}:${GROUP_ID:-1000}"</span>
 <span class="w">    </span><span class="nt">stdin_open</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">    </span><span class="nt">tty</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python3 /local/ATFA036TESTSUITE.py</span>
@@ -796,7 +796,7 @@
 <li>Configure o <code>config.json</code> com os dados do ambiente externo. O campo <code>Url</code> deve conter a URL do WebApp Protheus que será acessado pelo container. Para a execução no Docker, recomendamos habilitar o modo sem interface gráfica:</li>
 </ol>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;Headless&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">  </span><span class="nt">"Headless"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>Consulte a descrição dos demais parâmetros em <a href="https://totvs.github.io/tir/configjson.html">config.json</a>.
