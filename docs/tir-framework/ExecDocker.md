@@ -32,6 +32,8 @@ Os mounts `/etc/passwd` e `/etc/group`, assim como as variáveis `USER_ID` e `GR
 
 ## Executar o TIR
 
+> **Importante:** antes de executar o TIR via Docker, certifique-se de que o WebAgent esteja desativado no ambiente Protheus.
+
 1. Configure o `config.json` com os dados do ambiente externo. O campo `Url` deve conter a URL do WebApp Protheus que será acessado pelo container. Para a execução no Docker, recomendamos habilitar o modo sem interface gráfica:
 
    ```json
